@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://djocwcq2q0lt1"]
 
-[ext_resource type="PackedScene" uid="uid://djocwcq2q0lt1" path="res://Scenes/heart.tscn" id="1_452e1"]
+[ext_resource type="Texture2D" uid="uid://ce3yoxejr7x2t" path="res://Assets/sprites/All 16x16 Health Heart Sets/16x16 Health Heart Blue.png" id="1_452e1"]
 
-[node name="Heart" unique_id=1838386003 instance=ExtResource("1_452e1")]
+[node name="Heart" type="Sprite2D" unique_id=1838386003]
+texture = ExtResource("1_452e1")
+region_enabled = true
+region_rect = Rect2(0, 0, 16.694996, 16)

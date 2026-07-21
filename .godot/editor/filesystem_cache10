@@ -1,27 +1,27 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784601287
+::res://::1784601204
 icon.svg::CompressedTexture2D::8865911021432152573::1784598722::1784601204::1::::<><><>0<>0<>29a91c7297dcd91610ced26895c907bb<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1784599385::0::1::::<><><>0<>0<><>::
 ::res://Assets/::1784598744
-::res://Assets/sprites/::1784601205
+::res://Assets/sprites/::1784598745
 pixel-art-illustration-snake-pixelated-snake-snake-reptile-animal-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg::CompressedTexture2D::6189998769720430712::1784598745::1784601205::1::::<><><>0<>0<>dfc6e0384a95f44725862d87e341fe92<>res://.godot/imported/pixel-art-illustration-snake-pixelated-snake-snake-reptile-animal-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg-1d64e8d3f8c1bd231c297247b4465aeb.ctex::
 world_tileset.png::CompressedTexture2D::3721587636669338071::1784598745::1784601204::1::::<><><>0<>0<>6b237c76f4b9b7007620b1b1fef6f74b<>res://.godot/imported/world_tileset.png-7d0351459d02dec97d7c98fe9a06c85b.ctex::
-::res://Assets/sprites/All 16x16 Health Heart Sets/::1784601205
+::res://Assets/sprites/All 16x16 Health Heart Sets/::1784598745
 16x16 Health Heart Blue.png::CompressedTexture2D::5112882742642261813::1784598745::1784601205::1::::<><><>0<>0<>4f4adfd8971e36536dc344d04ee4f759<>res://.godot/imported/16x16 Health Heart Blue.png-50bad31303fcdc05e1cf1393a816e38e.ctex::
 16x16 Heart Health Black.png::CompressedTexture2D::7644423111156268923::1784598745::1784601205::1::::<><><>0<>0<>c643861b21c9941ec6a5c59d7c358606<>res://.godot/imported/16x16 Heart Health Black.png-4521d21efdbe8838a26522edeeedab0c.ctex::
 16x16 Heart Health Dark Blue.png::CompressedTexture2D::4436121174097627938::1784598745::1784601205::1::::<><><>0<>0<>9ee508eaba4cbdc92d40d57d911fcd16<>res://.godot/imported/16x16 Heart Health Dark Blue.png-b4e2dc4e3996228debe4cdf7ad6e9753.ctex::
 16x16 Heart Health pink.png::CompressedTexture2D::4542286287887570839::1784598745::1784601205::1::::<><><>0<>0<>f257755ccdaf4305bc473ba8bde9ad79<>res://.godot/imported/16x16 Heart Health pink.png-5a4b3d409c29bfa39f4eb02f8922b3b4.ctex::
 16x16 Heart Health Red.png::CompressedTexture2D::497244397183259336::1784598745::1784601205::1::::<><><>0<>0<>a551c8476a2ea907dd9b8b59007beb19<>res://.godot/imported/16x16 Heart Health Red.png-d89f4e14ab7a4d848b07e347a88aae28.ctex::
-::res://Assets/sprites/All 16x16 Health Heart Sets/Horizontal Half heart sets/::1784601205
+::res://Assets/sprites/All 16x16 Health Heart Sets/Horizontal Half heart sets/::1784598745
 16x16 Heart Health Black Horizontal.png::CompressedTexture2D::8078312621982896316::1784598745::1784601205::1::::<><><>0<>0<>219adccbb09110b59f49608528a6bec8<>res://.godot/imported/16x16 Heart Health Black Horizontal.png-a0bf9142f3058bc886a9906eff04aba0.ctex::
 16x16 Heart Health Blue Horizontal.png::CompressedTexture2D::6526452023705656258::1784598745::1784601205::1::::<><><>0<>0<>337a30da0b3c908554cdb2cd90ce386d<>res://.godot/imported/16x16 Heart Health Blue Horizontal.png-6612676798dd37a1d5d8bbcc8f4da524.ctex::
 16x16 Heart Health Dark Blue Horizontal.png::CompressedTexture2D::3803618143967196632::1784598745::1784601205::1::::<><><>0<>0<>bd64c1d92bb7e45e65c9cef6b9e48af0<>res://.godot/imported/16x16 Heart Health Dark Blue Horizontal.png-ff386acd7a3cd7d242489a81669aea49.ctex::
 16x16 Heart Health Pink Horizontal.png::CompressedTexture2D::8353936610208078309::1784598745::1784601205::1::::<><><>0<>0<>32e908967a79172578e661eb60d8ab49<>res://.godot/imported/16x16 Heart Health Pink Horizontal.png-0a3f5b82b1d792f6cd4619c09e70f431.ctex::
 16x16 Heart Health Red Horizontal.png::CompressedTexture2D::4420981813391794993::1784598745::1784601205::1::::<><><>0<>0<>b362f33933996033f60fca30779739f7<>res://.godot/imported/16x16 Heart Health Red Horizontal.png-dfc01a288f9868dbbf266ed7eee59306.ctex::
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/::1784601204
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/::1784598745
 Dacian.jpg::CompressedTexture2D::824910220877528017::1784598744::1784601204::1::::<><><>0<>0<>4826d475d336c482c188f5b483f18a9f<>res://.godot/imported/Dacian.jpg-f5c8c51fd0b4752eea3ac9b1fbad0ac3.ctex::
 ::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Attack/::1784598744
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Attack/50x50/::1784601205
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Attack/50x50/::1784598745
 Attack 0-0.png::CompressedTexture2D::1333730708451549948::1784598744::1784601205::1::::<><><>0<>0<>04b0d15b03be8b7af4a194aedac0942e<>res://.godot/imported/Attack 0-0.png-6277229aa86a13a026e5686f3f186741.ctex::
 Attack 0-1 Sprite Sheet.png::CompressedTexture2D::6970951565113133984::1784598744::1784601205::1::::<><><>0<>0<>2f18f94951b89257b63729f68cb66c37<>res://.godot/imported/Attack 0-1 Sprite Sheet.png-4ae1737c89a92472a3cfdc83e5ad0abc.ctex::
 Attack 0-1.png::CompressedTexture2D::3430343572731832313::1784598744::1784601205::1::::<><><>0<>0<>cbdaac6a9463b11918b915028544af18<>res://.godot/imported/Attack 0-1.png-faf851c2cbd9c8861259ce13b462e4b3.ctex::
@@ -35,7 +35,7 @@ Attack 1-2.png::CompressedTexture2D::3173703142323980929::1784598744::1784601205
 Attack 1-3.png::CompressedTexture2D::385744193047031600::1784598744::1784601205::1::::<><><>0<>0<>ea4f5fb08254edc31b8a00bd8722499f<>res://.godot/imported/Attack 1-3.png-a12af36be54ccab395426e7c8be1aedc.ctex::
 Attack Sprite 0.png::CompressedTexture2D::2441072894313424079::1784598744::1784601205::1::::<><><>0<>0<>4f8820953a651c515ca038807f70aa6c<>res://.godot/imported/Attack Sprite 0.png-3b4597e0c6bb4751bc91e44ba02793ee.ctex::
 Attack Sprite 1.png::CompressedTexture2D::3042032717359633614::1784598744::1784601204::1::::<><><>0<>0<>edbd966712f988d0dac51258550b5eed<>res://.godot/imported/Attack Sprite 1.png-ed5a2ee603c5e86748d91ce7ec87025d.ctex::
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Attack/100x100/::1784601205
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Attack/100x100/::1784598745
 Attack 0-1.png::CompressedTexture2D::6626728388950550307::1784598744::1784601204::1::::<><><>0<>0<>86845dfdd9bbb60241c25d717b32b2e5<>res://.godot/imported/Attack 0-1.png-18ef58df6c5699694c6ba3d8ab0bf1df.ctex::
 Attack 0-2.png::CompressedTexture2D::9169034471229113174::1784598744::1784601204::1::::<><><>0<>0<>38b8643cc3a61df78747023af7964616<>res://.godot/imported/Attack 0-2.png-f97ac27cb5f6ee73e92fc52114290f3f.ctex::
 Attack 0-3.png::CompressedTexture2D::8832209730521956649::1784598744::1784601204::1::::<><><>0<>0<>459cc02a4643492ed85ccd73a791ac79<>res://.godot/imported/Attack 0-3.png-88992587706743f29fc6314db2e0c304.ctex::
@@ -50,27 +50,27 @@ Attack Sprite 0-1.png::CompressedTexture2D::4170236271946687219::1784598744::178
 Attack Sprite 0.png::CompressedTexture2D::7491496347392026094::1784598744::1784601205::1::::<><><>0<>0<>0941f7de4d8b2a375941a228b7135212<>res://.godot/imported/Attack Sprite 0.png-0a1ad781c00d2033a2cfad1cff8878cf.ctex::
 Attack Sprite 1.png::CompressedTexture2D::3019457699783915391::1784598744::1784601205::1::::<><><>0<>0<>dbb4536a27bd9a6311844714e89556be<>res://.godot/imported/Attack Sprite 1.png-c7303fa5afb255fdbc7e67b5ab38a9ed.ctex::
 ::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Climb-GoDown/::1784598744
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Climb-GoDown/50x50/::1784601205
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Climb-GoDown/50x50/::1784598745
 Climb-Down Sprite Sheet.png::CompressedTexture2D::202566481116677582::1784598744::1784601205::1::::<><><>0<>0<>6aca0d9d36cd83ef4c2d9fef33a9bf5d<>res://.godot/imported/Climb-Down Sprite Sheet.png-d9a236a1fc4c8148b962336b17b3aad9.ctex::
 Climb-Down-0.png::CompressedTexture2D::7803356007037027012::1784598745::1784601205::1::::<><><>0<>0<>8e2c6a14929d70592f907c6a128d17fc<>res://.godot/imported/Climb-Down-0.png-b7967fedfbde67810a32595cd20d18eb.ctex::
 Climb-Down-1.png::CompressedTexture2D::2369524957683360788::1784598745::1784601205::1::::<><><>0<>0<>f33a909cf46ba8ce6e78ebfde1605109<>res://.godot/imported/Climb-Down-1.png-eab8ecd68cc650083fd9099a4e57f682.ctex::
 Climb-Down-2.png::CompressedTexture2D::1487845746012707704::1784598745::1784601205::1::::<><><>0<>0<>9a2bbb70e5f58104ec8d2eaaa6786c6d<>res://.godot/imported/Climb-Down-2.png-192488efc9f834a53d1f1fca18e69e0b.ctex::
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Climb-GoDown/100x100/::1784601205
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Climb-GoDown/100x100/::1784598745
 Climb-Down Sprite Sheet.png::CompressedTexture2D::2563437719807995478::1784598744::1784601205::1::::<><><>0<>0<>c541269f2f5fbaf9bd400b93b0b8d222<>res://.godot/imported/Climb-Down Sprite Sheet.png-84cf89bd2b9c428c8f36f446aa82b6f5.ctex::
 Climb-Down-0.png::CompressedTexture2D::1083769207661221437::1784598744::1784601205::1::::<><><>0<>0<>da38ea7b8ae105a61a918197216c230d<>res://.godot/imported/Climb-Down-0.png-4c332c8d3d4395a6d8bbfb7f7893701b.ctex::
 Climb-Down-1.png::CompressedTexture2D::3638438226448806502::1784598744::1784601205::1::::<><><>0<>0<>985d9a73963ea002d9867ce0f10a0982<>res://.godot/imported/Climb-Down-1.png-4418350b37c3e3be48b4af1cc06d187b.ctex::
 Climb-Down-2.png::CompressedTexture2D::5647957283972701693::1784598744::1784601205::1::::<><><>0<>0<>35df6c512b29dbc5604eebf6cb163b92<>res://.godot/imported/Climb-Down-2.png-2eec9bc4ca48d117f5389030ff499126.ctex::
 ::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Crouch/::1784598744
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Crouch/50x50/::1784601205
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Crouch/50x50/::1784598745
 Crouch 0-0.png::CompressedTexture2D::4559852765762995024::1784598744::1784601205::1::::<><><>0<>0<>536d94f32caa1f037036e6a352daaf0d<>res://.godot/imported/Crouch 0-0.png-e04b45a4a287932f0624914e91232570.ctex::
 Crouch 0-1.png::CompressedTexture2D::7090786812961865943::1784598744::1784601205::1::::<><><>0<>0<>24a27826deef3d637be287be08b17d80<>res://.godot/imported/Crouch 0-1.png-fcd36c8675b41562265c2343121dfac8.ctex::
 Crouch Sprite Sheet.png::CompressedTexture2D::453939785753391968::1784598744::1784601205::1::::<><><>0<>0<>3ea62346ed6bfffff5c344d4a41aad08<>res://.godot/imported/Crouch Sprite Sheet.png-29cab0c0f613dbbcbe5e5af62366d6d9.ctex::
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Crouch/100x100/::1784601205
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Crouch/100x100/::1784598745
 Crouch 0 Sprite Sheet.png::CompressedTexture2D::8935014568728319373::1784598744::1784601205::1::::<><><>0<>0<>0381ab4a92c6fb4d01b5a5a4451fa645<>res://.godot/imported/Crouch 0 Sprite Sheet.png-decfaba32f73fa32bcba934f331f8d89.ctex::
 Crouch 0-0.png::CompressedTexture2D::6457997346448397187::1784598744::1784601205::1::::<><><>0<>0<>126cc0e49bb6fd39d1665726a26f9823<>res://.godot/imported/Crouch 0-0.png-190f7b6031fa052b819b589d567ad9bf.ctex::
 Crouch 0-1.png::CompressedTexture2D::7958589434785651623::1784598744::1784601205::1::::<><><>0<>0<>50844b86ec2a87ab15b415cbbf0e4bb3<>res://.godot/imported/Crouch 0-1.png-18067a03c020dd1b9f7b673c70c18644.ctex::
 ::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Dead/::1784598744
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Dead/50x50/::1784601205
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Dead/50x50/::1784598745
 Dead 0 Sprite Sheet.png::CompressedTexture2D::342914591919806255::1784598744::1784601205::1::::<><><>0<>0<>bf97ad606db4fa89e099c791027045aa<>res://.godot/imported/Dead 0 Sprite Sheet.png-7b9c5d761fda7c993c47216d9d9c5986.ctex::
 Dead 0-0.png::CompressedTexture2D::4323907583485346085::1784598744::1784601205::1::::<><><>0<>0<>74084a5c09c950f38a4fca0603c2b434<>res://.godot/imported/Dead 0-0.png-dea393d300bc30c2847b028acd31bc4d.ctex::
 Dead 0-1.png::CompressedTexture2D::7783098620156729015::1784598744::1784601205::1::::<><><>0<>0<>ad120f432802545b1c101bb358c525db<>res://.godot/imported/Dead 0-1.png-84efb2e2460aaa9881f4f04163db9984.ctex::
@@ -86,7 +86,7 @@ Dead 1-4.png::CompressedTexture2D::4676217804557784211::1784598744::1784601205::
 Dead 1-5.png::CompressedTexture2D::8532612531112839421::1784598744::1784601205::1::::<><><>0<>0<>26cc9e4071125f4d97984fded5262a9d<>res://.godot/imported/Dead 1-5.png-b669369e399190c4de5ed5ca49c8781e.ctex::
 Dead 1-6.png::CompressedTexture2D::1533709956417042778::1784598744::1784601205::1::::<><><>0<>0<>e98615fedb93cf350c715eae065d100a<>res://.godot/imported/Dead 1-6.png-912aa4f8bf5f204fa5d1448282143e8d.ctex::
 Dead 1-7.png::CompressedTexture2D::5479825382715268610::1784598744::1784601205::1::::<><><>0<>0<>48e94d171cac22600be226fdac5f92ee<>res://.godot/imported/Dead 1-7.png-256c9c219bfba82e4e374f5f439c7748.ctex::
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Dead/100x100/::1784601205
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Dead/100x100/::1784598745
 Dead 0 Sprite Sheet.png::CompressedTexture2D::5884489134882698764::1784598744::1784601205::1::::<><><>0<>0<>09dad440e006260a690d1b167ad8a8ac<>res://.godot/imported/Dead 0 Sprite Sheet.png-125cf5a1c4d2ae503fecba5b9e5ec8f5.ctex::
 Dead 0-0.png::CompressedTexture2D::8652714020552100882::1784598744::1784601205::1::::<><><>0<>0<>b6daf92744192b496718d23703c303ff<>res://.godot/imported/Dead 0-0.png-a1d9a517af04fcfe9e197ce6051df3d1.ctex::
 Dead 0-1.png::CompressedTexture2D::3358809527797904561::1784598744::1784601205::1::::<><><>0<>0<>0ca6978881c34a2df3deabfab0dc5255<>res://.godot/imported/Dead 0-1.png-b55908e38999790604ea237bc6a79a8d.ctex::
@@ -103,14 +103,14 @@ Dead 1-5.png::CompressedTexture2D::5750206312830120412::1784598744::1784601205::
 Dead 1-6.png::CompressedTexture2D::6874303850027920235::1784598744::1784601205::1::::<><><>0<>0<>23486bfd63cabe1300915be5de65a716<>res://.godot/imported/Dead 1-6.png-97e49325b01c13f55e23689b9b64810f.ctex::
 Dead 1-7.png::CompressedTexture2D::4073041979435047376::1784598744::1784601205::1::::<><><>0<>0<>2fa045305e51ff340bc2164a79d41657<>res://.godot/imported/Dead 1-7.png-45f989a89563403a5ae416d6dae631d4.ctex::
 ::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Fall/::1784598744
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Fall/50x50/::1784601205
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Fall/50x50/::1784598745
 Fall 0 Sprite Sheet.png::CompressedTexture2D::1718883619382014610::1784598744::1784601205::1::::<><><>0<>0<>861e0846715ccc3e094b666d2ced938e<>res://.godot/imported/Fall 0 Sprite Sheet.png-989435239f5f0b7baad2593e34d01fec.ctex::
 Fall 0-0.png::CompressedTexture2D::1712771248913505609::1784598744::1784601205::1::::<><><>0<>0<>26113c9abd7f7967c7a411ff8b4feafb<>res://.godot/imported/Fall 0-0.png-a3ea529a0d743c3365d255b7fb3a91cb.ctex::
 Fall 0-1.png::CompressedTexture2D::2724574630416892808::1784598744::1784601205::1::::<><><>0<>0<>82eff5c73fefc7072218e24bbb694b79<>res://.godot/imported/Fall 0-1.png-f327e082d8b0a8afa7f7d2a870930878.ctex::
 Fall 1 Sprite Sheet.png::CompressedTexture2D::6406446823914824791::1784598744::1784601205::1::::<><><>0<>0<>0bc7b1987ac528002b88c66939c48d5c<>res://.godot/imported/Fall 1 Sprite Sheet.png-9b099a0a08719b7e0444e145eb4f1ec4.ctex::
 Fall 1-0.png::CompressedTexture2D::7743498337734533617::1784598744::1784601205::1::::<><><>0<>0<>2d89fe220bfd2f5ea67ad7591a72f6cd<>res://.godot/imported/Fall 1-0.png-c7b10fd24fc037f4b853ab924e972a68.ctex::
 Fall 1-1.png::CompressedTexture2D::4679230825205005538::1784598744::1784601205::1::::<><><>0<>0<>b141a1e5c6a04d669a29b1d15dc8feb0<>res://.godot/imported/Fall 1-1.png-ff4f85e9ee4c8e993d3d6ea2e7b7d32f.ctex::
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Fall/100x100/::1784601205
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Fall/100x100/::1784598745
 Fall 0 Sprite Sheet.png::CompressedTexture2D::6290647391600354925::1784598744::1784601205::1::::<><><>0<>0<>55db0851faf6d4794c3c7bdb6be390fd<>res://.godot/imported/Fall 0 Sprite Sheet.png-03eba831be4d7c1080ec32ac40398a0f.ctex::
 Fall 0-0.png::CompressedTexture2D::5320149288474592771::1784598744::1784601205::1::::<><><>0<>0<>f24bd710dbdda26e58b0df14df51ba6d<>res://.godot/imported/Fall 0-0.png-4daf66686dadaf39e17c626d85a56160.ctex::
 Fall 0-1.png::CompressedTexture2D::4960308973218237684::1784598744::1784601205::1::::<><><>0<>0<>3da406a26b4118e9791a393ca129943b<>res://.godot/imported/Fall 0-1.png-6551a127d55505a239679e6d3a016935.ctex::
@@ -118,7 +118,7 @@ Fall 1 Sprite Sheet.png::CompressedTexture2D::8696656379358197175::1784598744::1
 Fall 1-0.png::CompressedTexture2D::3885640963599923256::1784598744::1784601204::1::::<><><>0<>0<>5fc75ebd5c68d63f4937f48883e4d1d8<>res://.godot/imported/Fall 1-0.png-dabe84fc81330838f6a7e1f1e8041a3a.ctex::
 pixil-frame-1.png::CompressedTexture2D::7734751478018426268::1784598744::1784601204::1::::<><><>0<>0<>2642cd01635677014c216498e77aacbf<>res://.godot/imported/pixil-frame-1.png-6d9f5080d10dedbdd11848fba6bbe538.ctex::
 ::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Idle/::1784598744
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Idle/50x50/::1784601204
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Idle/50x50/::1784598745
 Idle 0-0.png::CompressedTexture2D::3428482974070017029::1784598744::1784601204::1::::<><><>0<>0<>7200b9c313fb17eba2bb0aa13baad6ca<>res://.godot/imported/Idle 0-0.png-430d1ddf62821234fd128ce27005695b.ctex::
 Idle 0-1.png::CompressedTexture2D::7698197125848114722::1784598744::1784601204::1::::<><><>0<>0<>254b48deadf575be7dc849b87d4138c1<>res://.godot/imported/Idle 0-1.png-ca0d3e7e051570ef9a46c3888c6aaae7.ctex::
 Idle 0-2.png::CompressedTexture2D::4915628938571927216::1784598744::1784601204::1::::<><><>0<>0<>b9a84a5cbf8ccdba6cc8ca4d5b99b8bc<>res://.godot/imported/Idle 0-2.png-6a45ecc6764865d32cf5824ae8199e29.ctex::
@@ -136,7 +136,7 @@ Idle Sprite 0.png::CompressedTexture2D::545185755220283686::1784598744::17846012
 Idle Sprite 1.png::CompressedTexture2D::4479939071078062007::1784598744::1784601204::1::::<><><>0<>0<>5b2aecc4f8c97924930ddf06250945a6<>res://.godot/imported/Idle Sprite 1.png-b40bc8909cc97ea1b4960f8186596841.ctex::
 Idle Sprite 2.png::CompressedTexture2D::832630943094073667::1784598744::1784601204::1::::<><><>0<>0<>27010dfb0f5fd2d9c7669f707d14740c<>res://.godot/imported/Idle Sprite 2.png-1af1706a6d10cd6b45dca49c8ba9578b.ctex::
 Idle Sprite 3.png::CompressedTexture2D::6486267715811298211::1784598744::1784601204::1::::<><><>0<>0<>2f903fc1d708daee98aa3ac4d8ae295d<>res://.godot/imported/Idle Sprite 3.png-cd1d70bb3c10b9aa0cacb5b70fe28df1.ctex::
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Idle/100x100/::1784601204
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Idle/100x100/::1784598745
 Idle 0-0.png::CompressedTexture2D::265300342346340461::1784598744::1784601204::1::::<><><>0<>0<>630f01b05b8ee47a2345593577b28b58<>res://.godot/imported/Idle 0-0.png-3772bf9bbe651cdea6e378c3f6b87b3c.ctex::
 Idle 0-1.png::CompressedTexture2D::6779640080099542016::1784598744::1784601204::1::::<><><>0<>0<>ec52214a7a87252772b6709988d6b98b<>res://.godot/imported/Idle 0-1.png-670d4249222fcb922adc83ad11744489.ctex::
 Idle 0-2.png::CompressedTexture2D::4548846587666057396::1784598744::1784601204::1::::<><><>0<>0<>3ca6724dea385da2edb54cb330a2ce7c<>res://.godot/imported/Idle 0-2.png-d949fd6e30df7bbf41dbc129d5ed74a6.ctex::
@@ -155,14 +155,14 @@ Idle Sprite 1.png::CompressedTexture2D::2739233581249836360::1784598744::1784601
 Idle Sprite 2.png::CompressedTexture2D::5048694059813107987::1784598744::1784601204::1::::<><><>0<>0<>921e0315100cd7fccc776b6964004363<>res://.godot/imported/Idle Sprite 2.png-03963437ff4fd54c2deb6968e61d9031.ctex::
 Idle Sprite 3.png::CompressedTexture2D::1705562168734427606::1784598744::1784601204::1::::<><><>0<>0<>5e5c068d7793aad5f56ddb5e0717e7ed<>res://.godot/imported/Idle Sprite 3.png-1dc9036f990831b348992da4ccc9e6de.ctex::
 ::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Jump/::1784598744
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Jump/50x50/::1784601204
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Jump/50x50/::1784598745
 Jump 0-0.png::CompressedTexture2D::2594843716600408110::1784598744::1784601204::1::::<><><>0<>0<>38f4d27b8b926c1d839bbbda73b7fa88<>res://.godot/imported/Jump 0-0.png-0f20499f4ebeca6c0bd4040ae9648698.ctex::
 Jump 0-1.png::CompressedTexture2D::5268419719885487350::1784598744::1784601204::1::::<><><>0<>0<>3aaf7e72d1691d05a4c8e4ad3a5b15bc<>res://.godot/imported/Jump 0-1.png-e8f43d8e70940003ea421a95b323f5eb.ctex::
 Jump 0-2.png::CompressedTexture2D::2948044376210147855::1784598744::1784601204::1::::<><><>0<>0<>5256692de89644b12af19104cf490471<>res://.godot/imported/Jump 0-2.png-8715f7b1cf383a7fa8edc65e5cb0e764.ctex::
 Jump 0-3.png::CompressedTexture2D::4550765067367200980::1784598744::1784601204::1::::<><><>0<>0<>b7e4085bb81da9a572ee15644d5e5820<>res://.godot/imported/Jump 0-3.png-9d8ac07e6418f05efbd503ec7f3fb9ba.ctex::
 Jump 0-4.png::CompressedTexture2D::8076834442555141069::1784598744::1784601204::1::::<><><>0<>0<>1a365fa470b6d71c924d4136c840af07<>res://.godot/imported/Jump 0-4.png-1d2a1304e9bcd9429fbd46a40b0736c8.ctex::
 Jump Sprite 0.png::CompressedTexture2D::9211066548963545096::1784598744::1784601204::1::::<><><>0<>0<>f136698af05f9b4b1c361dc358f666ee<>res://.godot/imported/Jump Sprite 0.png-794e098da2e47a8d1d76df087f11d56e.ctex::
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Jump/100x100/::1784601204
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Jump/100x100/::1784598745
 Jump 0-0.png::CompressedTexture2D::3226792510959399962::1784598744::1784601204::1::::<><><>0<>0<>6146aae79bdfb365abc0d1ff5574fa18<>res://.godot/imported/Jump 0-0.png-d63af386c87364bf2c92097f37f9a225.ctex::
 Jump 0-1.png::CompressedTexture2D::5140547826738945099::1784598744::1784601204::1::::<><><>0<>0<>33b0124cdf4129bc9dba613a667ea664<>res://.godot/imported/Jump 0-1.png-5076c257a4c6aa5238af9085614fab2e.ctex::
 Jump 0-2.png::CompressedTexture2D::4653058989624412787::1784598744::1784601204::1::::<><><>0<>0<>9fb617074e4e3841cfd2a2644ab43dce<>res://.godot/imported/Jump 0-2.png-383ce99f6f9cf37aeec99f3269e4525e.ctex::
@@ -170,7 +170,7 @@ Jump 0-3.png::CompressedTexture2D::3113990984056816689::1784598744::1784601204::
 Jump 0-4.png::CompressedTexture2D::8586139266261994369::1784598744::1784601204::1::::<><><>0<>0<>365f5a8e42209a51234dd99be90ae0f1<>res://.godot/imported/Jump 0-4.png-df0f7f49e1796d35588905b9a6f116cf.ctex::
 Jump Sprite 0.png::CompressedTexture2D::5745890405306122871::1784598744::1784601204::1::::<><><>0<>0<>a4e2bcb89bdb86aabf9176a9b0dc92fd<>res://.godot/imported/Jump Sprite 0.png-195c756394b4d365246651d8d7152c28.ctex::
 ::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Run/::1784598744
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Run/50x50/::1784601204
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Run/50x50/::1784598745
 Run 0-0.png::CompressedTexture2D::2299254608566721456::1784598744::1784601204::1::::<><><>0<>0<>3f4fbc653b556565beade6dba2cc24e6<>res://.godot/imported/Run 0-0.png-8661e931ea2352e9499f7763aaee2709.ctex::
 Run 0-1.png::CompressedTexture2D::3793298196075829324::1784598744::1784601204::1::::<><><>0<>0<>825dafc34a15014631170b01e93af32c<>res://.godot/imported/Run 0-1.png-234bcd0b4dc4488f9fd7ef7913bb8a0b.ctex::
 Run 0-2.png::CompressedTexture2D::6935947761625400154::1784598744::1784601204::1::::<><><>0<>0<>f8f419bd0378d79c489a19ba437a461e<>res://.godot/imported/Run 0-2.png-0848bde704eff19a48a4e6849f3b7968.ctex::
@@ -189,7 +189,7 @@ Run 2-4.png::CompressedTexture2D::121819499520428267::1784598744::1784601204::1:
 Run Sprite 0.png::CompressedTexture2D::2436684897931050640::1784598744::1784601204::1::::<><><>0<>0<>22771eec455fad1f03113da167348e12<>res://.godot/imported/Run Sprite 0.png-afdec177f56183fcd08b845805c77e80.ctex::
 Run Sprite 1.png::CompressedTexture2D::1366732479299835234::1784598744::1784601204::1::::<><><>0<>0<>abea6b6d22b4476abfc51e04432703a0<>res://.godot/imported/Run Sprite 1.png-68191588a38e2425872cb579f9c85a61.ctex::
 Run Sprite 2.png::CompressedTexture2D::4650225447449100955::1784598744::1784601204::1::::<><><>0<>0<>bd8dba7d1cb14e691cb327e8e0297ff7<>res://.godot/imported/Run Sprite 2.png-c11e3a8b1aaafc408a011a93b4cc9d5f.ctex::
-::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Run/100x100/::1784601204
+::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Run/100x100/::1784598745
 Run 0-0.png::CompressedTexture2D::2837606826893297442::1784598744::1784601204::1::::<><><>0<>0<>225c1c4e8d31ca106e2a02da4366d014<>res://.godot/imported/Run 0-0.png-50d01b62d55c03da1f2477c746406848.ctex::
 Run 0-1.png::CompressedTexture2D::1179347713069212639::1784598744::1784601204::1::::<><><>0<>0<>09fa36c5d9eb1f03eac1c99354057a21<>res://.godot/imported/Run 0-1.png-6165b9301977c93e304f2470c2714bc9.ctex::
 Run 0-2.png::CompressedTexture2D::1899000520086212061::1784598744::1784601204::1::::<><><>0<>0<>39d921b0665bfbc350904cab4df94c92<>res://.godot/imported/Run 0-2.png-f9ff1d0ea97e1eeafbac12c408beef05.ctex::
@@ -211,8 +211,8 @@ Run Sprite 2.png::CompressedTexture2D::7094051535114215579::1784598744::17846012
 ::res://Scenes/::1784598967
 game.tscn::PackedScene::1701179674522081005::1784598967::0::1::::<><><>0<>0<><>::uid://be8qbmt0fe144::::res://Scenes/player.tscn<>uid://bvu5xnddp5ug2::::res://Scenes/tile_map.tscn<>uid://bta1afmtr8b4b::::res://Assets/sprites/world_tileset.png<>uid://ctqm11ullb5j7::::res://Scenes/snake.tscn
 heart.tscn::PackedScene::7820023784842576884::1784598749::0::1::::<><><>0<>0<><>::uid://ce3yoxejr7x2t::::res://Assets/sprites/All 16x16 Health Heart Sets/16x16 Health Heart Blue.png
-player.tscn::PackedScene::474754223136667148::1784601287::0::1::::<><><>0<>0<><>::uid://be8qbmt0fe144::::res://Scenes/player.tscn
-snake.tscn::PackedScene::6140235872146254434::1784601315::0::1::::<><><>0<>0<><>::uid://ctqm11ullb5j7::::res://Scenes/snake.tscn
+player.tscn::PackedScene::2736274442581612719::1784598749::0::1::::<><><>0<>0<><>::uid://c3ubxpp10k6x6::::res://Scripts/player.gd<>uid://c6k1s3g5osd8c::::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Attack/50x50/Attack 0-1 Sprite Sheet.png<>uid://l4lkslut65v0::::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Idle/50x50/Idle Sprite 2.png<>uid://h1den8exahvq::::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Idle/50x50/Idle Sprite 0.png<>uid://d4h56j41nq7bw::::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Jump/50x50/Jump Sprite 0.png<>uid://bayl3x78pnxq3::::res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Run/50x50/Run Sprite 0.png<>uid://djocwcq2q0lt1::::res://Scenes/heart.tscn
+snake.tscn::PackedScene::6140235872146254434::1784598749::0::1::::<><><>0<>0<><>::uid://bnuxfjkxalsqj::::res://Scripts/snake.gd<>uid://cugqm06ov623m::::res://Assets/sprites/pixel-art-illustration-snake-pixelated-snake-snake-reptile-animal-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg
 tile_map.tscn::PackedScene::3903537225811302071::1784598749::0::1::::<><><>0<>0<><>::uid://bta1afmtr8b4b::::res://Assets/sprites/world_tileset.png
 ::res://Scripts/::1784598752
 player.gd::GDScript::6779519146822360969::1784598752::0::1::::<>CharacterBody2D<><>0<>0<><>::
