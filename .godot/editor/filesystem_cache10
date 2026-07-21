@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1784601526
+::res://::1784601287
 icon.svg::CompressedTexture2D::8865911021432152573::1784598722::1784601204::1::::<><><>0<>0<>29a91c7297dcd91610ced26895c907bb<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1784599385::0::1::::<><><>0<>0<><>::
 ::res://Assets/::1784598744
@@ -208,11 +208,12 @@ Run 2-4.png::CompressedTexture2D::8221419032818256884::1784598744::1784601204::1
 Run Sprite 0.png::CompressedTexture2D::4960712806860289031::1784598744::1784601204::1::::<><><>0<>0<>cace344bf618060d6d1bfaa7325ef928<>res://.godot/imported/Run Sprite 0.png-1557f8ad62ca51016fb56ca4d7d4860c.ctex::
 Run Sprite 1.png::CompressedTexture2D::2555197671158561499::1784598744::1784601204::1::::<><><>0<>0<>83e47132c7b5dfb4cfa7b05fbf5bc5de<>res://.godot/imported/Run Sprite 1.png-9aa51d9a4c302f7505bcbb776534b6e2.ctex::
 Run Sprite 2.png::CompressedTexture2D::7094051535114215579::1784598744::1784601204::1::::<><><>0<>0<>287e126e35c12c4cc267cd187db5b181<>res://.godot/imported/Run Sprite 2.png-0cdfe9a792a9519d02e9d7ac421fce9b.ctex::
-::res://Scenes/::1784601441
+::res://Scenes/::1784598967
 game.tscn::PackedScene::1701179674522081005::1784598967::0::1::::<><><>0<>0<><>::uid://be8qbmt0fe144::::res://Scenes/player.tscn<>uid://bvu5xnddp5ug2::::res://Scenes/tile_map.tscn<>uid://bta1afmtr8b4b::::res://Assets/sprites/world_tileset.png<>uid://ctqm11ullb5j7::::res://Scenes/snake.tscn
-heart.tscn::PackedScene::7820023784842576884::1784601335::0::1::::<><><>0<>0<><>::uid://djocwcq2q0lt1::::res://Scenes/heart.tscn
+heart.tscn::PackedScene::7820023784842576884::1784598749::0::1::::<><><>0<>0<><>::uid://ce3yoxejr7x2t::::res://Assets/sprites/All 16x16 Health Heart Sets/16x16 Health Heart Blue.png
 player.tscn::PackedScene::474754223136667148::1784601287::0::1::::<><><>0<>0<><>::uid://be8qbmt0fe144::::res://Scenes/player.tscn
 snake.tscn::PackedScene::6140235872146254434::1784601315::0::1::::<><><>0<>0<><>::uid://ctqm11ullb5j7::::res://Scenes/snake.tscn
+tile_map.tscn::PackedScene::3903537225811302071::1784598749::0::1::::<><><>0<>0<><>::uid://bta1afmtr8b4b::::res://Assets/sprites/world_tileset.png
 ::res://Scripts/::1784598752
 player.gd::GDScript::6779519146822360969::1784598752::0::1::::<>CharacterBody2D<><>0<>0<><>::
 snake.gd::GDScript::3341569115075534633::1784598752::0::1::::<>CharacterBody2D<><>0<>0<><>::
