@@ -9,10 +9,6 @@ const JUMP_VELOCITY = -300.0
 var attack_mode = false
 var is_attacking = false
 
-func _ready():
-	# Hitbox starts disable
-	attack_hitbox.monitoring = false
-
 
 func _physics_process(delta: float) -> void:
 	# Add gravity.
@@ -103,7 +99,11 @@ func _on_sword_body_entered(body: Node2D) -> void:
 var hearts_list : Array[TextureRect]
 var health = 5
 
-func ready() -> void:
+func _ready():
+	# Hitbox starts disable
+	attack_hitbox.monitoring = false
+
+	# Setup hearts display
 	var hearts_parent = $"health bar/HBoxContainer"
 	for child in hearts_parent.get_children():
 		hearts_list.append(child)

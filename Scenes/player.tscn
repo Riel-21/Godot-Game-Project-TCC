@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c3ubxpp10k6x6" path="res://Scripts/player.gd" id="1_vgqql"]
 [ext_resource type="Texture2D" uid="uid://d07xbylg8ifqw" path="res://Assets/sprites/Hero:Traveler.PNG" id="2_6t5aa"]
+[ext_resource type="Texture2D" uid="uid://bvnfs2g401qu" path="res://Assets/sprites/ChatGPT Image Jul 22, 2026, 10_30_03 AM 4.PNG" id="3_vgqql"]
 [ext_resource type="PackedScene" uid="uid://djocwcq2q0lt1" path="res://Scenes/heart.tscn" id="7_3smsa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6t5aa"]
@@ -20,9 +21,9 @@ region = Rect2(573, 671, 266, 221)
 atlas = ExtResource("2_6t5aa")
 region = Rect2(0, 14, 195, 226)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pu2lt"]
-atlas = ExtResource("2_6t5aa")
-region = Rect2(0, 14, 195, 226)
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3wgy"]
+atlas = ExtResource("3_vgqql")
+region = Rect2(26, 0, 1510, 1024)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fd4e3"]
 atlas = ExtResource("2_6t5aa")
@@ -90,7 +91,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pu2lt")
+"texture": SubResource("AtlasTexture_x3wgy")
 }],
 "loop": 1,
 "name": &"idle attack",
@@ -141,17 +142,20 @@ animations = [{
 size = Vector2(80, 193.33333)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_86xdo"]
-size = Vector2(100, 161.66666)
+size = Vector2(193.33333, 161.66666)
 
-[node name="Player" type="CharacterBody2D" unique_id=1513868683]
+[node name="Player" type="CharacterBody2D" unique_id=1513868683 groups=["Player"]]
+position = Vector2(-48.000008, 30.000002)
 scale = Vector2(0.2, 0.2)
+collision_layer = 2
+collision_mask = 21
 script = ExtResource("1_vgqql")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1143033639]
 process_mode = 1
 position = Vector2(-26.666664, -53.333332)
 sprite_frames = SubResource("SpriteFrames_86xdo")
-animation = &"attack"
+animation = &"idle attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=622273645]
 position = Vector2(-83.33333, -43.333332)
@@ -159,11 +163,12 @@ shape = SubResource("RectangleShape2D_pk7y5")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1147609123]
 position = Vector2(-86.666664, 26.666666)
-collision_layer = 2
+collision_layer = 8
 collision_mask = 4
 
 [node name="AttackHitbox" type="CollisionShape2D" parent="Area2D" unique_id=1062309816]
-position = Vector2(143.33333, -93.33333)
+position = Vector2(189.99997, -93.333305)
+scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_86xdo")
 
 [node name="health bar" type="CanvasLayer" parent="." unique_id=2085879690]

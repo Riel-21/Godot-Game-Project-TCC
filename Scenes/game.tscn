@@ -145,11 +145,11 @@ sources/0 = SubResource("TileSetAtlasSource_3dryh")
 
 [node name="Player" parent="." unique_id=1513868683 instance=ExtResource("1_ebmjs")]
 z_index = 5
-position = Vector2(232, 38)
+position = Vector2(-58.999985, 52)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1194209789]
 position = Vector2(0, 7)
-zoom = Vector2(4, 4)
+zoom = Vector2(2.3, 2.3)
 position_smoothing_enabled = true
 
 [node name="TileMap" parent="." unique_id=321276071 instance=ExtResource("2_qxrlw")]

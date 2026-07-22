@@ -34,3 +34,40 @@ func take_damage(amount):
 
 	if health <= 0:
 		queue_free()
+
+@export var snake_poision_projectile_scene: PackedScene
+
+@onready var spawn_point = $Marker2D
+
+var player = null
+var player_in_range = false
+
+
+func shoot():
+	print("Shoot")
+	var projectile = snake_poision_projectile_scene.instantiate()
+
+	projectile.global_position = spawn_point.global_position
+
+	projectile.direction = (player.global_position - $Marker2D.global_position).normalized()
+
+	get_tree().current_scene.add_child(projectile)
+
+
+func _on_timer_timeout() -> void:
+	print("Timer fired")
+	if player_in_range:
+		print("Trying to shoot")
+		shoot()
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	print("Something entered:", body.name)
+	if body.is_in_group("Player"):
+		player = body
+		player_in_range = true
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	if body == player:
+		player = null
+		player_in_range = false
