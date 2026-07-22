@@ -53,13 +53,23 @@ collision_mask = 2
 position = Vector2(14, -11)
 shape = SubResource("RectangleShape2D_86xdo")
 
-[node name="Timer" type="Timer" parent="." unique_id=364166803]
+[node name="Timer for attack" type="Timer" parent="." unique_id=364166803]
 wait_time = 2.5
 autostart = true
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=1712802499]
 position = Vector2(10, -16)
 
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=327384547]
+path_desired_distance = 0.3
+target_desired_distance = 0.3
+debug_enabled = true
+
+[node name="Timer for nav" type="Timer" parent="." unique_id=1641745615]
+wait_time = 5.0
+autostart = true
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer for attack" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer for nav" to="." method="_on_timer_for_nav_timeout"]
