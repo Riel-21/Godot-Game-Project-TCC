@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://be8qbmt0fe144"]
 
 [ext_resource type="Script" uid="uid://c3ubxpp10k6x6" path="res://Scripts/player.gd" id="1_vgqql"]
-[ext_resource type="Texture2D" uid="uid://d07xbylg8ifqw" path="res://Assets/sprites/Hero:Traveler.PNG" id="2_6t5aa"]
+[ext_resource type="Texture2D" uid="uid://d07xbylg8ifqw" path="res://Assets/sprites/Traveler.PNG" id="2_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://cntfq4pnju81u" path="res://Assets/sprites/ChatGPT Image Jul 22, 2026, 10_30_03 AM 8.PNG" id="3_vgqql"]
 [ext_resource type="PackedScene" uid="uid://djocwcq2q0lt1" path="res://Scenes/heart.tscn" id="7_3smsa"]
 

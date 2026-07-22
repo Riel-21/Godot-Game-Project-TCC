@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d07xbylg8ifqw"
-path="res://.godot/imported/Hero:Traveler.PNG-932c35547e79327f06277eb17cf55492.ctex"
+path="res://.godot/imported/Traveler.PNG-83d15a3b17f131aa860a76eec91e8697.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/Hero:Traveler.PNG"
-dest_files=["res://.godot/imported/Hero:Traveler.PNG-932c35547e79327f06277eb17cf55492.ctex"]
+source_file="res://Assets/sprites/Traveler.PNG"
+dest_files=["res://.godot/imported/Traveler.PNG-83d15a3b17f131aa860a76eec91e8697.ctex"]
 
 [params]
 
