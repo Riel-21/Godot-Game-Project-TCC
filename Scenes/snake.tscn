@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ctqm11ullb5j7"]
 
 [ext_resource type="Script" uid="uid://bnuxfjkxalsqj" path="res://Scripts/snake.gd" id="1_7pca0"]
-[ext_resource type="Texture2D" uid="uid://bs28ki51js2q3" path="res://Assets/sprites/pixel-art-illustration-snake-pixelated-snake-snake-reptile-animal-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.PNG" id="2_pox6b"]
+[ext_resource type="Texture2D" uid="uid://bs28ki51js2q3" path="res://Assets/sprites/Snake.PNG" id="2_pox6b"]
 [ext_resource type="PackedScene" uid="uid://blnp5e82op5ku" path="res://Scenes/snake_poision_projectile.tscn" id="2_rku0m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pk7y5"]
