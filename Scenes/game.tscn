@@ -173,4 +173,3 @@ layer_0/tile_data = PackedInt32Array(0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0
 
 [node name="Snake" parent="." unique_id=1375713619 instance=ExtResource("4_3dryh")]
 position = Vector2(278, 44)
-snake_poision_projectile_scene = null
