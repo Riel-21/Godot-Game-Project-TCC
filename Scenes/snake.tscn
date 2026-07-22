@@ -54,7 +54,7 @@ position = Vector2(14, -11)
 shape = SubResource("RectangleShape2D_86xdo")
 
 [node name="Timer" type="Timer" parent="." unique_id=364166803]
-wait_time = 2.0
+wait_time = 2.5
 autostart = true
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=1712802499]

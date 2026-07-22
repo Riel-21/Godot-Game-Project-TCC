@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c3ubxpp10k6x6" path="res://Scripts/player.gd" id="1_vgqql"]
 [ext_resource type="Texture2D" uid="uid://d07xbylg8ifqw" path="res://Assets/sprites/Hero:Traveler.PNG" id="2_6t5aa"]
-[ext_resource type="Texture2D" uid="uid://bvnfs2g401qu" path="res://Assets/sprites/ChatGPT Image Jul 22, 2026, 10_30_03 AM 4.PNG" id="3_vgqql"]
+[ext_resource type="Texture2D" uid="uid://cntfq4pnju81u" path="res://Assets/sprites/ChatGPT Image Jul 22, 2026, 10_30_03 AM 8.PNG" id="3_vgqql"]
 [ext_resource type="PackedScene" uid="uid://djocwcq2q0lt1" path="res://Scenes/heart.tscn" id="7_3smsa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6t5aa"]
@@ -79,7 +79,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"attack",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -153,12 +153,12 @@ script = ExtResource("1_vgqql")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1143033639]
 process_mode = 1
-position = Vector2(-26.666664, -53.333332)
+position = Vector2(-89.99996, -50.00001)
 sprite_frames = SubResource("SpriteFrames_86xdo")
-animation = &"idle attack"
+animation = &"attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=622273645]
-position = Vector2(-83.33333, -43.333332)
+position = Vector2(-49.999973, -45.00001)
 shape = SubResource("RectangleShape2D_pk7y5")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1147609123]

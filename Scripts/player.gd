@@ -93,7 +93,7 @@ func attack():
 
 func _on_sword_body_entered(body: Node2D) -> void:
 	if body.has_method("take_damage"):
-		body.take_damage(10)
+		body.take_damage(15)
 
 
 var hearts_list : Array[TextureRect]

@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var health_bar: ProgressBar = $ProgressBar
 
-const MAX_HEALTH = 50
+const MAX_HEALTH = 40
 var health = MAX_HEALTH
 
 func _ready():
