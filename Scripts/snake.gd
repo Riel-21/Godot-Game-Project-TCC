@@ -33,6 +33,7 @@ func take_damage(amount):
 	print("ProgressBar value:", health_bar.value)
 
 	if health <= 0:
+		ScoreManager.add_score(5) 
 		queue_free()
 
 @export var snake_poision_projectile_scene: PackedScene
