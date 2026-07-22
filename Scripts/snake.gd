@@ -1,17 +1,18 @@
 extends CharacterBody2D
 
-const speed = 60.0 # Increased speed slightly so movement is visible
-
+@export var snake_poision_projectile_scene: PackedScene
 @onready var health_bar: ProgressBar = $ProgressBar
-@onready var nav_agent := $NavigationAgent2D as NavigationAgent2D
 @onready var spawn_point = $Marker2D
 
 const MAX_HEALTH = 40
 var health = MAX_HEALTH
+var speed = 60.0
 
-@export var snake_poision_projectile_scene: PackedScene
+var direction = 0
+var player_pos = Vector2.ZERO
+var target_pos = Vector2.ZERO
 
-var player = null
+var player = null 
 var player_in_range = false
 
 
@@ -24,28 +25,20 @@ func _ready():
 
 
 func _physics_process(delta: float) -> void:
-	# If player hasn't been detected yet, do not follow
-	if not is_instance_valid(player):
-		velocity.x = 0
-		move_and_slide()
-		return
-
-	# Apply gravity if in the air
+	# 1. Apply gravity
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Godot 4 NavigationAgent calculation
-	var next_path_pos = nav_agent.get_next_path_position()
-	var dir = (next_path_pos - global_position).normalized()
-	
-	velocity.x = dir.x * speed
-
-	move_and_slide()
-
-
-func makepath() -> void:
+	# 2. Movement logic towards player
 	if is_instance_valid(player):
-		nav_agent.target_position = player.global_position
+		player_pos = player.global_position
+		target_pos = (player_pos - global_position).normalized()
+		velocity.x = target_pos.x * speed
+	else:
+		velocity.x = 0
+
+	# 3. Apply physics movement
+	move_and_slide()
 
 
 func take_damage(amount):
@@ -75,18 +68,12 @@ func _on_timer_timeout() -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	# Checks for both "player" and "Player" to prevent group naming bugs
 	if body.is_in_group("player") or body.is_in_group("Player"):
 		player = body
 		player_in_range = true
-		makepath() # Instantly start calculating path when detected!
 
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body == player:
 		player = null
 		player_in_range = false
-
-
-func _on_timer_for_nav_timeout() -> void:
-	makepath()
