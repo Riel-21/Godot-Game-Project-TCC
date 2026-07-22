@@ -142,7 +142,7 @@ texture = ExtResource("3_wrm1d")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_3dryh")
 
-[node name="Game" type="Node2D" unique_id=53861055]
+[node name="Testing - Gabriel" type="Node2D" unique_id=53861055]
 
 [node name="Player" parent="." unique_id=1513868683 instance=ExtResource("1_ebmjs")]
 z_index = 5
