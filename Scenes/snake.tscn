@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://bnuxfjkxalsqj" path="res://Scripts/snake.gd" id="1_7pca0"]
 [ext_resource type="Texture2D" uid="uid://bs28ki51js2q3" path="res://Assets/sprites/Snake.PNG" id="2_pox6b"]
-[ext_resource type="PackedScene" uid="uid://blnp5e82op5ku" path="res://Scenes/snake_poision_projectile.tscn" id="2_rku0m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pk7y5"]
 size = Vector2(17, 28)
@@ -20,7 +19,6 @@ size = Vector2(298.5, 224.5)
 collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_7pca0")
-snake_poision_projectile_scene = ExtResource("2_rku0m")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=657817993]
 position = Vector2(12.000001, -11.124998)
