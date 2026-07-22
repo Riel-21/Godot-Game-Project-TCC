@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://Scenes/player.tscn" id="1_ebmjs"]
 [ext_resource type="PackedScene" uid="uid://bvu5xnddp5ug2" path="res://Scenes/tile_map.tscn" id="2_qxrlw"]
+[ext_resource type="Script" uid="uid://rra5pcu5rcl5" path="res://Scripts/score_lable.gd" id="2_wowpa"]
 [ext_resource type="Texture2D" uid="uid://bta1afmtr8b4b" path="res://Assets/sprites/world_tileset.png" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://ctqm11ullb5j7" path="res://Scenes/snake.tscn" id="4_3dryh"]
 
@@ -145,12 +146,25 @@ sources/0 = SubResource("TileSetAtlasSource_3dryh")
 
 [node name="Player" parent="." unique_id=1513868683 instance=ExtResource("1_ebmjs")]
 z_index = 5
-position = Vector2(232, 38)
+position = Vector2(-58.999985, 52)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1194209789]
 position = Vector2(0, 7)
-zoom = Vector2(4, 4)
+zoom = Vector2(2.3, 2.3)
 position_smoothing_enabled = true
+
+[node name="Score" type="CanvasLayer" parent="Player/Camera2D" unique_id=927331608]
+
+[node name="Score Lable" type="Label" parent="Player/Camera2D/Score" unique_id=1994793102]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -173.0
+offset_right = -11.0
+offset_bottom = 63.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 40
+script = ExtResource("2_wowpa")
 
 [node name="TileMap" parent="." unique_id=321276071 instance=ExtResource("2_qxrlw")]
 position = Vector2(193, 61)

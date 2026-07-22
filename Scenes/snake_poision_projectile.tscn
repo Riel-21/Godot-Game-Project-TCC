@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://blnp5e82op5ku"]
+
+[ext_resource type="Script" uid="uid://c74jn00bx8q7y" path="res://Scripts/snake_poision_projectile.gd" id="1_3pps2"]
+[ext_resource type="Texture2D" uid="uid://blgwadddpvmml" path="res://Assets/sprites/PoisonDrop.png" id="1_qe7y2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3pps2"]
+atlas = ExtResource("1_qe7y2")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvtjp"]
+atlas = ExtResource("1_qe7y2")
+region = Rect2(1024, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jha48"]
+atlas = ExtResource("1_qe7y2")
+region = Rect2(2048, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bvxik"]
+atlas = ExtResource("1_qe7y2")
+region = Rect2(3072, 0, 1024, 1024)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pk7y5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3pps2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvtjp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jha48")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bvxik")
+}],
+"loop": 1,
+"name": &"Projectile",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_86xdo"]
+radius = 295.20502
+
+[node name="SnakePoision Projectile" type="Area2D" unique_id=1115061575]
+rotation = 1.5707964
+scale = Vector2(0.025, 0.025)
+collision_layer = 16
+collision_mask = 2
+script = ExtResource("1_3pps2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1180724835]
+sprite_frames = SubResource("SpriteFrames_pk7y5")
+animation = &"Projectile"
+frame_progress = 0.7401307
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1303830339]
+position = Vector2(-9, 248)
+shape = SubResource("CircleShape2D_86xdo")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1353587904]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

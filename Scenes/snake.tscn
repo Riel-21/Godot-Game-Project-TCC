@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://ctqm11ullb5j7"]
 
 [ext_resource type="Script" uid="uid://bnuxfjkxalsqj" path="res://Scripts/snake.gd" id="1_7pca0"]
-[ext_resource type="Texture2D" uid="uid://cugqm06ov623m" path="res://Assets/sprites/pixel-art-illustration-snake-pixelated-snake-snake-reptile-animal-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.jpg" id="1_xmcex"]
+[ext_resource type="Texture2D" uid="uid://bs28ki51js2q3" path="res://Assets/sprites/pixel-art-illustration-snake-pixelated-snake-snake-reptile-animal-icon-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector.PNG" id="2_pox6b"]
+[ext_resource type="PackedScene" uid="uid://blnp5e82op5ku" path="res://Scenes/snake_poision_projectile.tscn" id="2_rku0m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pk7y5"]
-size = Vector2(17, 17)
+size = Vector2(17, 28)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7pca0"]
 bg_color = Color(0.99607843, 0, 0, 1)
@@ -12,26 +13,30 @@ bg_color = Color(0.99607843, 0, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oupx1"]
 bg_color = Color(0, 1, 0.27450982, 1)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_86xdo"]
+size = Vector2(298.5, 224.5)
+
 [node name="Snake" type="CharacterBody2D" unique_id=1375713619]
 collision_layer = 4
+collision_mask = 3
 script = ExtResource("1_7pca0")
+snake_poision_projectile_scene = ExtResource("2_rku0m")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=657817993]
-position = Vector2(15.781252, -1.1249988)
-scale = Vector2(0.019961739, 0.020153064)
-texture = ExtResource("1_xmcex")
+position = Vector2(12.000001, -11.124998)
+scale = Vector2(0.036734693, 0.04056123)
+texture = ExtResource("2_pox6b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1524355322]
 z_index = 5
-position = Vector2(16, -1)
+position = Vector2(14.5, -11)
 shape = SubResource("RectangleShape2D_pk7y5")
 
 [node name="ProgressBar" type="ProgressBar" parent="." unique_id=1308743343]
 z_index = 5
-offset_left = -1.5258789e-05
-offset_top = -15.000004
-offset_right = 3.9999847
-offset_bottom = 6.999996
+offset_top = -32.000004
+offset_right = 3.999999
+offset_bottom = -10.000004
 rotation = -1.5728835
 theme_override_styles/background = SubResource("StyleBoxFlat_7pca0")
 theme_override_styles/fill = SubResource("StyleBoxFlat_oupx1")
@@ -39,3 +44,32 @@ max_value = 30.0
 value = 30.0
 fill_mode = 2
 show_percentage = false
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1073860595]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=903205616]
+position = Vector2(14, -11)
+shape = SubResource("RectangleShape2D_86xdo")
+
+[node name="Timer for attack" type="Timer" parent="." unique_id=364166803]
+wait_time = 2.5
+autostart = true
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1712802499]
+position = Vector2(10, -16)
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=327384547]
+path_desired_distance = 0.3
+target_desired_distance = 0.3
+debug_enabled = true
+
+[node name="Timer for nav" type="Timer" parent="." unique_id=1641745615]
+wait_time = 5.0
+autostart = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="timeout" from="Timer for attack" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer for nav" to="." method="_on_timer_for_nav_timeout"]
