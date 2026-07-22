@@ -66,29 +66,23 @@ func _physics_process(delta: float) -> void:
 
 func attack():
 	is_attacking = true
-
 	animated_sprite_2d.play("attack")
 	
-	# Wait until the sword reaches the enemy
-	await get_tree().create_timer(0.3).timeout
-	
-	# Enable hitbox
+	await get_tree().create_timer(0.14).timeout
 	attack_hitbox.monitoring = true
-	
-	# Hitbox stays active briefly
-	await get_tree().create_timer(0.2).timeout
-	
-	# Disable hitbox
+	await get_tree().create_timer(0.14).timeout
 	attack_hitbox.monitoring = false
-
-	await animated_sprite_2d.animation_finished
+	
+	await get_tree().create_timer(0.15).timeout
 
 	is_attacking = false
+	print("DEBUG: Attack finished! is_attacking is now back to FALSE.")
 
 	if attack_mode:
 		animated_sprite_2d.play("idle attack")
 	else:
 		animated_sprite_2d.play("idle")
+
 
 
 func _on_sword_body_entered(body: Node2D) -> void:
