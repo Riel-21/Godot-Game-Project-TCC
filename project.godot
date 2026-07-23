@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="The Conquered Crown"
-run/main_scene="uid://yicge48108e0"
+run/main_scene="uid://cxxuom47jxlgr"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
