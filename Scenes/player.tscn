@@ -1,13 +1,9 @@
 [gd_scene format=3 uid="uid://be8qbmt0fe144"]
 
 [ext_resource type="Script" uid="uid://c3ubxpp10k6x6" path="res://Scripts/player.gd" id="1_vgqql"]
-[ext_resource type="PackedScene" uid="uid://b3iavi5iywbc8" path="res://Scenes/player_bullet.tscn" id="2_3smsa"]
 [ext_resource type="Texture2D" uid="uid://d07xbylg8ifqw" path="res://Assets/sprites/Traveler.PNG" id="2_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://dnlp6boemjqou" path="res://Assets/sprites/Idle Attack.PNG" id="3_vgqql"]
-[ext_resource type="Texture2D" uid="uid://bfbxlplmn35nr" path="res://Assets/sprites/Dacian Warrior Animated Pixel-Art 2D/Dead/100x100/Dead 1 Sprite Sheet.png" id="3_x3wgy"]
-[ext_resource type="PackedScene" uid="uid://c453vhpmw0lc" path="res://Scenes/pause_menu.tscn" id="5_fkybt"]
 [ext_resource type="PackedScene" uid="uid://djocwcq2q0lt1" path="res://Scenes/heart.tscn" id="7_3smsa"]
-[ext_resource type="Script" uid="uid://rra5pcu5rcl5" path="res://Scripts/score_lable.gd" id="8_8erm5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6t5aa"]
 atlas = ExtResource("2_6t5aa")
@@ -20,38 +16,6 @@ region = Rect2(307, 671, 266, 221)
 [sub_resource type="AtlasTexture" id="AtlasTexture_fkybt"]
 atlas = ExtResource("2_6t5aa")
 region = Rect2(573, 671, 266, 221)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3smsa"]
-atlas = ExtResource("3_x3wgy")
-region = Rect2(0, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
-atlas = ExtResource("3_x3wgy")
-region = Rect2(100, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tx1dd"]
-atlas = ExtResource("3_x3wgy")
-region = Rect2(200, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gymyn"]
-atlas = ExtResource("3_x3wgy")
-region = Rect2(300, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pu2lt"]
-atlas = ExtResource("3_x3wgy")
-region = Rect2(400, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ukyrk"]
-atlas = ExtResource("3_x3wgy")
-region = Rect2(500, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7dp3o"]
-atlas = ExtResource("3_x3wgy")
-region = Rect2(600, 0, 100, 100)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_h4iuc"]
-atlas = ExtResource("3_x3wgy")
-region = Rect2(700, 0, 100, 100)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8erm5"]
 atlas = ExtResource("2_6t5aa")
@@ -116,35 +80,6 @@ animations = [{
 "loop": 0,
 "name": &"attack",
 "speed": 7.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3smsa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_f1ek2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tx1dd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gymyn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pu2lt")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ukyrk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7dp3o")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_h4iuc")
-}],
-"loop": 1,
-"name": &"death",
-"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -215,13 +150,12 @@ scale = Vector2(0.2, 0.2)
 collision_layer = 2
 collision_mask = 21
 script = ExtResource("1_vgqql")
-bullet_node = ExtResource("2_3smsa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1143033639]
 process_mode = 1
 position = Vector2(-89.99996, -50.00001)
 sprite_frames = SubResource("SpriteFrames_86xdo")
-animation = &"run"
+animation = &"idle"
 
 [node name="HurtHitbox" type="CollisionShape2D" parent="." unique_id=622273645]
 position = Vector2(-49.999973, -45.00001)
@@ -276,29 +210,5 @@ custom_minimum_size = Vector2(11.35, 0)
 layout_mode = 2
 
 [node name="Heart" parent="health bar/HBoxContainer/heart5" unique_id=262039136 instance=ExtResource("7_3smsa")]
-
-[node name="Pause_menu" parent="." unique_id=1103089260 instance=ExtResource("5_fkybt")]
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1157267144]
-zoom = Vector2(2, 2)
-
-[node name="Score_Label" type="Label" parent="Camera2D" unique_id=1332185121]
-offset_left = 1365.0
-offset_top = -780.0
-offset_right = 1780.0
-offset_bottom = -615.0
-theme_override_font_sizes/font_size = 100
-script = ExtResource("8_8erm5")
-
-[node name="CoyoteJumptimer" type="Timer" parent="." unique_id=183480555]
-wait_time = 0.15
-one_shot = true
-
-[node name="jump_buffer_timer" type="Timer" parent="." unique_id=1863180837]
-wait_time = 0.08
-one_shot = true
-
-[node name="DashTimer" type="Timer" parent="." unique_id=1233287233]
-wait_time = 0.5
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_sword_body_entered"]
