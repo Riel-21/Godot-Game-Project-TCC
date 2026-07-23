@@ -292,4 +292,8 @@ one_shot = true
 [node name="DashTimer" type="Timer" parent="." unique_id=1233287233]
 wait_time = 0.5
 
+[node name="Label" type="Label" parent="." unique_id=1006825989]
+offset_right = 40.0
+offset_bottom = 23.0
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_sword_body_entered"]
