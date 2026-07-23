@@ -23,7 +23,7 @@ func _ready():
 	set_physics_process(false)
 	
 	
-func _process(delta):
+func _process(_delta):
 	# If player doesn't exist yet or was freed, retry finding them or return safely
 	if not is_instance_valid(player):
 		player = get_tree().get_first_node_in_group("player")

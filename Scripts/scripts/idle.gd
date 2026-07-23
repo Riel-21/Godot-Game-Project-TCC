@@ -18,8 +18,6 @@ func transition():
 		get_parent().change_state("Follow")
 
 
-
-
-func _on_player_dectection_body_entered(body: Node2D) -> void:
+func _on_player_dectection_body_entered(_body: Node2D) -> void:
 	player_entered = true
 	print("player entered")

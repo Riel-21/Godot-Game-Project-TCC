@@ -43,7 +43,7 @@ func transition():
 
 
 # Ensure transition gets checked in case _physics_process drives the FSM
-func physics_update(delta: float):
+func physics_update(_delta: float):
 	if can_transition:
 		transition()
 

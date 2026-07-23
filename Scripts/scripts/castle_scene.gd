@@ -25,12 +25,5 @@ func toggle_pause() -> void:
 		pause_menu.hide() # Or pause_menu.hide() depending on your UI functions
 
 
-
-
-  
-
-
-
-
-func _on_changesceneboss_body_entered(body: Node2D):
-	get_tree().change_scene_to_file.call_deferred("res://scenes/boss_room.tscn")
+func _on_changesceneboss_body_entered(_body: Node2D):
+	get_tree().change_scene_to_file.call_deferred("res://Scenes/boss_room.tscn")
