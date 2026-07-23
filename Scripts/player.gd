@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var attack_hitbox: Area2D = $Area2D
-
+@onready var hurt_hitbox: CollisionShape2D = $HurtHitbox
 const SPEED = 150.0
 const JUMP_VELOCITY = -300.0
 
@@ -26,10 +26,12 @@ func _physics_process(delta: float) -> void:
 	if direction > 0:
 		animated_sprite_2d.flip_h = false
 		attack_hitbox.scale.x = 1
+		hurt_hitbox.scale.x = 1
 	
 	elif direction < 0:
 		animated_sprite_2d.flip_h = true
 		attack_hitbox.scale.x = -1
+		hurt_hitbox.scale.x = -1
 
 	# Toggle attack mode with F.
 	if Input.is_action_just_pressed("toggle attack mode"):

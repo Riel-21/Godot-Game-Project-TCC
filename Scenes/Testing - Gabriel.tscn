@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://yicge48108e0"]
 
-[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://Scenes/player.tscn" id="1_ebmjs"]
-[ext_resource type="PackedScene" uid="uid://bvu5xnddp5ug2" path="res://Scenes/tile_map.tscn" id="2_qxrlw"]
-[ext_resource type="Script" uid="uid://rra5pcu5rcl5" path="res://Scripts/score_lable.gd" id="2_wowpa"]
-[ext_resource type="Texture2D" uid="uid://bta1afmtr8b4b" path="res://Assets/sprites/world_tileset.png" id="3_wrm1d"]
-[ext_resource type="PackedScene" uid="uid://ctqm11ullb5j7" path="res://Scenes/snake.tscn" id="4_3dryh"]
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://Scenes/player.tscn" id="1_ymksi"]
+[ext_resource type="Script" uid="uid://rra5pcu5rcl5" path="res://Scripts/score_lable.gd" id="2_01xm2"]
+[ext_resource type="PackedScene" uid="uid://bvu5xnddp5ug2" path="res://Scenes/tile_map.tscn" id="3_7mymc"]
+[ext_resource type="Texture2D" uid="uid://bta1afmtr8b4b" path="res://Assets/sprites/world_tileset.png" id="4_i7l2i"]
+[ext_resource type="PackedScene" uid="uid://ctqm11ullb5j7" path="res://Scenes/snake - projectile attack.tscn" id="5_o5sls"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3dryh"]
-texture = ExtResource("3_wrm1d")
+texture = ExtResource("4_i7l2i")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -144,7 +144,7 @@ sources/0 = SubResource("TileSetAtlasSource_3dryh")
 
 [node name="Testing - Gabriel" type="Node2D" unique_id=53861055]
 
-[node name="Player" parent="." unique_id=1513868683 instance=ExtResource("1_ebmjs")]
+[node name="Player" parent="." unique_id=1513868683 instance=ExtResource("1_ymksi")]
 z_index = 5
 position = Vector2(-58.999985, 52)
 
@@ -164,12 +164,12 @@ offset_right = -11.0
 offset_bottom = 63.0
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 40
-script = ExtResource("2_wowpa")
+script = ExtResource("2_01xm2")
 
-[node name="TileMap" parent="." unique_id=321276071 instance=ExtResource("2_qxrlw")]
+[node name="TileMap" parent="." unique_id=321276071 instance=ExtResource("3_7mymc")]
 position = Vector2(193, 61)
 tile_set = SubResource("TileSet_wowpa")
 layer_0/tile_data = PackedInt32Array(0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 65530, 0, 0, 65531, 0, 0, 65532, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 5, 0, 0, 65523, 0, 0, 65524, 0, 0, 65525, 0, 0, 65526, 0, 0, 65527, 0, 0, 65528, 0, 0, 65529, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 65522, 0, 0, 65521, 0, 0, 65520, 0, 0, 65519, 0, 0, 65518, 0, 0, 65517, 0, 0, 65516, 0, 0, -20, 0, 0, -21, 0, 0, -22, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0, 27, 0, 0, 28, 0, 0, 29, 0, 0, -65507, 0, 0, -131043, 0, 0, -196579, 0, 0, -196578, 0, 0, -131042, 0, 0, -65506, 0, 0, 30, 0, 0, 65515, 0, 0, 65514, 0, 0, -65558, 0, 0, -65557, 0, 0, -131093, 0, 0, -196629, 0, 0, -262165, 0, 0, -262166, 0, 0, -196630, 0, 0, -131094, 0, 0)
 
-[node name="Snake" parent="." unique_id=1375713619 instance=ExtResource("4_3dryh")]
+[node name="Snake" parent="." unique_id=1375713619 instance=ExtResource("5_o5sls")]
 position = Vector2(278, 44)
