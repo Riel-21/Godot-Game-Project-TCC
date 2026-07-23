@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://c6sokb4v2dat3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_js80x"]
+size = Vector2(167, 47)
+
+[sub_resource type="Animation" id="Animation_ms375"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_cbp6d"]
+resource_name = "move"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -300), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ms375"]
+_data = {
+&"RESET": SubResource("Animation_ms375"),
+&"move": SubResource("Animation_cbp6d")
+}
+
+[node name="Moving_platform" type="Node2D" unique_id=1198943029]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=491066464]
+
+[node name="ColorRect" type="ColorRect" parent="AnimatableBody2D" unique_id=872896159]
+offset_right = 158.0
+offset_bottom = 40.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1295867810]
+position = Vector2(79.5, 20.5)
+shape = SubResource("RectangleShape2D_js80x")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=888249678]
+libraries/ = SubResource("AnimationLibrary_ms375")
+autoplay = &"move"
