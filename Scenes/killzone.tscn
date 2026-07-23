@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bc536g4khdffx"]
+
+[ext_resource type="Script" uid="uid://tl4qokb4jqcu" path="res://scripts/killzone.gd" id="1_kl8fp"]
+[ext_resource type="Texture2D" uid="uid://12vtxvgqqyjv" path="res://PNG with Gemini/16-bit-spike-Sheet.png" id="2_j2mit"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_js80x"]
+
+[node name="Killzone" type="Area2D" unique_id=330258236]
+script = ExtResource("1_kl8fp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2134494229]
+position = Vector2(1.0000076, 26)
+scale = Vector2(6.1562505, 4.25)
+texture = ExtResource("2_j2mit")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=643010778]
+shape = SubResource("WorldBoundaryShape2D_js80x")
+
+[node name="Timer" type="Timer" parent="." unique_id=1572570180]
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
