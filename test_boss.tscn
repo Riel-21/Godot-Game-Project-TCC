@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dutctj8k4yh0y"]
+
+[ext_resource type="PackedScene" uid="uid://brc4swcm8cpuq" path="res://Scenes/golem_boss.tscn" id="1_y0omj"]
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://Scenes/player.tscn" id="2_wrr5v"]
+[ext_resource type="PackedScene" uid="uid://bvu5xnddp5ug2" path="res://Scenes/tile_map.tscn" id="3_wrr5v"]
+
+[node name="Test Boss" type="Node2D" unique_id=1613161970]
+
+[node name="GolemBoss" parent="." unique_id=1541148254 instance=ExtResource("1_y0omj")]
+position = Vector2(392, 425)
+
+[node name="Evren" parent="." unique_id=1513868683 instance=ExtResource("2_wrr5v")]
+position = Vector2(28.000122, 433.00006)
+
+[node name="TileMap" parent="." unique_id=321276071 instance=ExtResource("3_wrr5v")]
+position = Vector2(-113, 645)
+layer_0/tile_data = PackedInt32Array(-458755, 0, 0, -458754, 0, 0, -458753, 0, 0, -524288, 0, 0, -524287, 0, 0, -524286, 0, 0, -524285, 0, 0, -524284, 0, 0, -524283, 0, 0, -524282, 0, 0, -524281, 0, 0, -524280, 0, 0, -524279, 0, 0, -524278, 0, 0, -524277, 0, 0, -524276, 0, 0, -524275, 0, 0, -524274, 0, 0, -524273, 0, 0, -524272, 0, 0, -524271, 0, 0, -524270, 0, 0, -524269, 0, 0, -524268, 0, 0, -524267, 0, 0, -524266, 0, 0, -524265, 0, 0, -524264, 0, 0, -524263, 0, 0, -524262, 0, 0, -524261, 0, 0, -524260, 0, 0, -524259, 0, 0, -524258, 0, 0, -524257, 0, 0, -524256, 0, 0, -524255, 0, 0, -524254, 0, 0, -524253, 0, 0, -524252, 0, 0, -524251, 0, 0, -524250, 0, 0, -524249, 0, 0, -524248, 0, 0, -524247, 0, 0, -524246, 0, 0, -524245, 0, 0, -524244, 0, 0, -524243, 0, 0, -524242, 0, 0, -524241, 0, 0, -524240, 0, 0, -524239, 0, 0, -524238, 0, 0, -458702, 0, 0, -458701, 0, 0)
