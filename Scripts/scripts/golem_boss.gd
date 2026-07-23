@@ -11,9 +11,11 @@ var DEF = 0
 var health = 100:
 	set(value):
 		health = value
-		progress_bar.value = value
+		if progress_bar:
+			progress_bar.value = value
 		if value <= 0:
-			progress_bar.visible = false
+			if progress_bar:
+				progress_bar.visible = false
 			find_child("FiniteStateMachine").change_state("Death")
 		elif value <= progress_bar.max_value / 2 and DEF == 0:
 			DEF = 5
@@ -22,8 +24,11 @@ var health = 100:
 
 func _ready():
 	set_physics_process(false)
-	
-	
+	if progress_bar:
+		progress_bar.max_value = health
+		progress_bar.value = health
+
+
 func _process(delta):
 	# Safely check if player exists and hasn't been queued for deletion
 	if not is_instance_valid(player):
@@ -35,8 +40,8 @@ func _process(delta):
 		sprite.flip_h = true
 	else:
 		sprite.flip_h = false
-		
-		
+
+
 func _physics_process(delta):
 	# Double check inside physics process too so velocity isn't updated toward a missing player
 	if not is_instance_valid(player):
@@ -47,5 +52,8 @@ func _physics_process(delta):
 	move_and_collide(velocity * delta)
 
 
-func take_damage():
-	health -= 10 - DEF
+# Updated to accept 'amount' from the bullet!
+func take_damage(amount: int = 10):
+	# Applies defense mitigation: reduces damage by DEF (minimum 1 damage taken)
+	var final_damage = max(1, amount - DEF)
+	health -= final_damage

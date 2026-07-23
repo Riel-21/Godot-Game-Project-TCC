@@ -18,7 +18,9 @@ radius = 139.4346
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gp35k"]
 size = Vector2(26, 29)
 
-[node name="Snake - Target Player" type="CharacterBody2D" unique_id=2111111415]
+[node name="Snake - Target Player" type="CharacterBody2D" unique_id=2111111415 groups=["snake"]]
+collision_layer = 4
+collision_mask = 3
 script = ExtResource("1_gp35k")
 
 [node name="Collision_Hurt" type="CollisionShape2D" parent="." unique_id=880050672]
