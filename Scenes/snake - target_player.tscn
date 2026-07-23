@@ -1,13 +1,27 @@
 [gd_scene format=3 uid="uid://fr6ugj5n6voh"]
 
 [ext_resource type="Texture2D" uid="uid://bs28ki51js2q3" path="res://Assets/sprites/Snake.PNG" id="1_2hw2b"]
+[ext_resource type="Script" uid="uid://bl5r6csorhhm1" path="res://Scripts/snake_target_player.gd" id="1_gp35k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pk7y5"]
 size = Vector2(17, 28)
 
-[node name="Snake - Target Player" type="CharacterBody2D" unique_id=2111111415]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2hw2b"]
+bg_color = Color(0.99607843, 0, 0, 1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=880050672]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gp35k"]
+bg_color = Color(0, 1, 0.27450982, 1)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2hw2b"]
+radius = 139.4346
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gp35k"]
+size = Vector2(26, 29)
+
+[node name="Snake - Target Player" type="CharacterBody2D" unique_id=2111111415]
+script = ExtResource("1_gp35k")
+
+[node name="Collision_Hurt" type="CollisionShape2D" parent="." unique_id=880050672]
 z_index = 5
 position = Vector2(1.5, 1)
 shape = SubResource("RectangleShape2D_pk7y5")
@@ -16,10 +30,40 @@ shape = SubResource("RectangleShape2D_pk7y5")
 scale = Vector2(0.041, 0.041)
 texture = ExtResource("1_2hw2b")
 
-[node name="ProgressBar" type="ProgressBar" parent="." unique_id=757126920]
-offset_left = -16.0
-offset_top = -17.0
-offset_right = -12.0
-offset_bottom = 10.0
-rotation = -1.5797085
+[node name="ProgressBar2" type="ProgressBar" parent="." unique_id=560537022]
+z_index = 5
+offset_left = -17.000002
+offset_top = -17.999998
+offset_right = -13.000003
+offset_bottom = 4.000002
+rotation = -1.5728835
+theme_override_styles/background = SubResource("StyleBoxFlat_2hw2b")
+theme_override_styles/fill = SubResource("StyleBoxFlat_gp35k")
+max_value = 30.0
+value = 30.0
+fill_mode = 2
 show_percentage = false
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=1708812821]
+position = Vector2(-16, -17)
+rotation = -1.5797085
+collision_layer = 0
+collision_mask = 2
+
+[node name="Collision_DA" type="CollisionShape2D" parent="DetectionArea" unique_id=1907705984]
+position = Vector2(-21.15067, 16.812172)
+shape = SubResource("CircleShape2D_2hw2b")
+debug_color = Color(0.62958336, 0.52514106, 0.21060249, 0.41960785)
+
+[node name="Hitbox_attack" type="Area2D" parent="." unique_id=1258262214]
+collision_layer = 0
+collision_mask = 2
+
+[node name="Collision_HBA" type="CollisionShape2D" parent="Hitbox_attack" unique_id=2011511481]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_gp35k")
+debug_color = Color(0.9999998, 0.015267339, 0.029454479, 0.41960785)
+
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]
+[connection signal="body_entered" from="Hitbox_attack" to="." method="_on_hitbox_attack_body_entered"]
