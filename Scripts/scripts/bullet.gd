@@ -11,14 +11,6 @@ func _ready() -> void:
 	player = get_tree().get_first_node_in_group("player")
 
 func _physics_process(delta):
-	# 1. If player doesn't exist or was destroyed mid-flight, destroy the bullet (or let it fly straight)
-	if not is_instance_valid(player):
-		# Option A: Destroy homing missile if player dies
-		queue_free()
-		return
-		
-		# Option B: (If you prefer it to keep flying straight, comment out 'queue_free()' above)
-
 	# 2. Homing steering math
 	acceleration = (player.position - position).normalized() * 700
 	

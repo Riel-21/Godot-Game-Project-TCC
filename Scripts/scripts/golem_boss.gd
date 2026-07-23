@@ -1,19 +1,20 @@
 extends CharacterBody2D
 
-@onready var player = get_parent().find_child("player")
+var player: Node2D = null
 @onready var sprite = $Sprite2D
 @onready var progress_bar: ProgressBar = $UI/ProgressBar
 
-
-var direction : Vector2
+var direction : Vector2 = Vector2.ZERO
 var DEF = 0
 
 var health = 100:
 	set(value):
 		health = value
-		progress_bar.value = value
+		if is_instance_valid(progress_bar):
+			progress_bar.value = value
 		if value <= 0:
-			progress_bar.visible = false
+			if is_instance_valid(progress_bar):
+				progress_bar.visible = false
 			find_child("FiniteStateMachine").change_state("Death")
 		elif value <= progress_bar.max_value / 2 and DEF == 0:
 			DEF = 5
@@ -22,12 +23,16 @@ var health = 100:
 
 func _ready():
 	set_physics_process(false)
-	
-	
+	# Safely grab player from anywhere in the scene tree
+	player = get_tree().get_first_node_in_group("player")
+
+
 func _process(delta):
-	# Safely check if player exists and hasn't been queued for deletion
+	# If player doesn't exist yet or was freed, retry finding them or return safely
 	if not is_instance_valid(player):
-		return # Stop execution if the player is freed!
+		player = get_tree().get_first_node_in_group("player")
+		if not is_instance_valid(player):
+			return # Stop execution here so it never reaches player.position on a null instance!
 
 	direction = player.position - position
 	
@@ -35,10 +40,9 @@ func _process(delta):
 		sprite.flip_h = true
 	else:
 		sprite.flip_h = false
-		
-		
+
+
 func _physics_process(delta):
-	# Double check inside physics process too so velocity isn't updated toward a missing player
 	if not is_instance_valid(player):
 		velocity = Vector2.ZERO
 		return
@@ -47,5 +51,7 @@ func _physics_process(delta):
 	move_and_collide(velocity * delta)
 
 
-func take_damage():
-	health -= 10 - DEF
+func take_damage(amount: int = 10):
+	# Calculate damage based on incoming hit value, subtracting DEF
+	var final_damage = max(1, amount - DEF)
+	health -= final_damage

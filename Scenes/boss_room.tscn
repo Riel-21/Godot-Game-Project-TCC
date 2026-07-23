@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cp57umpvlhj1u"]
+
+[ext_resource type="PackedScene" uid="uid://brc4swcm8cpuq" path="res://Scenes/golem_boss.tscn" id="1_lu0rs"]
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://Scenes/player.tscn" id="2_b2mui"]
+[ext_resource type="PackedScene" uid="uid://bvu5xnddp5ug2" path="res://Scenes/tile_map.tscn" id="3_q04ek"]
+
+[node name="boss_room" type="Node2D" unique_id=1756133190]
+
+[node name="GolemBoss" parent="." unique_id=1541148254 instance=ExtResource("1_lu0rs")]
+collision_layer = 2
+collision_mask = 2
+
+[node name="Evren" parent="." unique_id=1513868683 instance=ExtResource("2_b2mui")]
+position = Vector2(269.99997, 104.99999)
+collision_layer = 1
+
+[node name="TileMap" parent="." unique_id=321276071 instance=ExtResource("3_q04ek")]
+layer_0/tile_data = PackedInt32Array(589813, 0, 0, 589814, 0, 0, 589815, 0, 0, 589816, 0, 0, 589819, 0, 0, 589820, 0, 0, 589821, 0, 0, 589822, 0, 0, 589823, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 0, 0, 524316, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524311, 0, 0, 524310, 0, 0, 524309, 0, 0, 524308, 0, 0, 589818, 0, 0, 589817, 0, 0)

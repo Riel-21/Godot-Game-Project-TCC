@@ -10,7 +10,7 @@ size = Vector2(10, 10)
 
 [node name="player_bullet" type="Area2D" unique_id=602526267]
 collision_layer = 0
-collision_mask = 4
+collision_mask = 2
 script = ExtResource("1_4g3gs")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1452962652]
