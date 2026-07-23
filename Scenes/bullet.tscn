@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d2thqputpagsl"]
 
-[ext_resource type="Script" uid="uid://bvksnor2448tq" path="res://scripts/bullet.gd" id="1_y25gk"]
-[ext_resource type="Texture2D" uid="uid://dly3n56bk3yut" path="res://assets/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/arm_projectile_glowing.png" id="2_l5glv"]
+[ext_resource type="Script" uid="uid://bvksnor2448tq" path="res://Scripts/scripts/bullet.gd" id="1_y25gk"]
+[ext_resource type="Texture2D" uid="uid://dly3n56bk3yut" path="res://Assets/sprites/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/arm_projectile_glowing.png" id="2_l5glv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eoqba"]
 atlas = ExtResource("2_l5glv")

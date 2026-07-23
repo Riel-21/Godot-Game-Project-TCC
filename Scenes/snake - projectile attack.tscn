@@ -16,7 +16,7 @@ bg_color = Color(0, 1, 0.27450982, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_86xdo"]
 size = Vector2(298.5, 224.5)
 
-[node name="Snake - Projectile attack" type="CharacterBody2D" unique_id=1375713619]
+[node name="Snake - Projectile attack" type="CharacterBody2D" unique_id=1375713619 groups=["snake"]]
 collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_7pca0")

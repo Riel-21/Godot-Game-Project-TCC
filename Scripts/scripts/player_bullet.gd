@@ -12,7 +12,9 @@ func _on_body_entered(body):
 	# Only try to damage things that actually have a take_damage method (like enemies)
 	if body.has_method("take_damage"):
 		body.take_damage()
-	
+	else:
+		if body.is_in_group("snake"):
+			body.take_damage()
 	# Whether it hit an enemy or a TileMap wall, the bullet should always delete itself on impact
 	queue_free()
 

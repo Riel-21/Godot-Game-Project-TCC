@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://brc4swcm8cpuq"]
 
-[ext_resource type="Script" uid="uid://74ptwbeykhlc" path="res://scripts/golem_boss.gd" id="1_jiwok"]
-[ext_resource type="Texture2D" uid="uid://dbj1780eitgoq" path="res://assets/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/PNG sheet/Character_sheet.png" id="1_tftbb"]
-[ext_resource type="Texture2D" uid="uid://d4afdehosksk5" path="res://assets/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/Laser_sheet.png" id="2_2ivs1"]
-[ext_resource type="Script" uid="uid://dn28wa07uvlu" path="res://scripts/finite_state_machine.gd" id="3_wl8t3"]
-[ext_resource type="Script" uid="uid://ppri2wh21lqi" path="res://scripts/idle.gd" id="4_5raa4"]
-[ext_resource type="Script" uid="uid://cmbkf78jqf686" path="res://scripts/follow.gd" id="5_jidqh"]
-[ext_resource type="Script" uid="uid://ccvovimn0rbt3" path="res://scripts/melee_attack.gd" id="7_33i4v"]
-[ext_resource type="Script" uid="uid://c3locajf0es0d" path="res://scripts/laser_beam.gd" id="8_33i4v"]
-[ext_resource type="Script" uid="uid://c8418gak7gsxf" path="res://scripts/armor_buff.gd" id="9_33i4v"]
-[ext_resource type="Script" uid="uid://wybmy8osyqde" path="res://scripts/dash.gd" id="9_egbyw"]
-[ext_resource type="Script" uid="uid://digpy0x08qln5" path="res://scripts/homing_missile.gd" id="9_isqk6"]
-[ext_resource type="PackedScene" uid="uid://d2thqputpagsl" path="res://scenes/bullet.tscn" id="10_dxa6x"]
-[ext_resource type="Script" uid="uid://cl5i0l1o4pn71" path="res://scripts/death.gd" id="11_33i4v"]
+[ext_resource type="Script" uid="uid://74ptwbeykhlc" path="res://Scripts/scripts/golem_boss.gd" id="1_jiwok"]
+[ext_resource type="Texture2D" uid="uid://dbj1780eitgoq" path="res://Assets/sprites/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/PNG sheet/Character_sheet.png" id="1_tftbb"]
+[ext_resource type="Texture2D" uid="uid://d4afdehosksk5" path="res://Assets/sprites/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/Laser_sheet.png" id="2_2ivs1"]
+[ext_resource type="Script" uid="uid://dn28wa07uvlu" path="res://Scripts/scripts/finite_state_machine.gd" id="3_wl8t3"]
+[ext_resource type="Script" uid="uid://ppri2wh21lqi" path="res://Scripts/scripts/idle.gd" id="4_5raa4"]
+[ext_resource type="Script" uid="uid://cmbkf78jqf686" path="res://Scripts/scripts/follow.gd" id="5_jidqh"]
+[ext_resource type="Script" uid="uid://ccvovimn0rbt3" path="res://Scripts/scripts/melee_attack.gd" id="7_33i4v"]
+[ext_resource type="Script" uid="uid://c3locajf0es0d" path="res://Scripts/scripts/laser_beam.gd" id="8_33i4v"]
+[ext_resource type="Script" uid="uid://c8418gak7gsxf" path="res://Scripts/scripts/armor_buff.gd" id="9_33i4v"]
+[ext_resource type="Script" uid="uid://wybmy8osyqde" path="res://Scripts/scripts/dash.gd" id="9_egbyw"]
+[ext_resource type="Script" uid="uid://digpy0x08qln5" path="res://Scripts/scripts/homing_missile.gd" id="9_isqk6"]
+[ext_resource type="PackedScene" uid="uid://d2thqputpagsl" path="res://Scenes/bullet.tscn" id="10_dxa6x"]
+[ext_resource type="Script" uid="uid://cl5i0l1o4pn71" path="res://Scripts/scripts/death.gd" id="11_33i4v"]
 
 [sub_resource type="Animation" id="Animation_wl8t3"]
 length = 0.001
@@ -373,7 +373,7 @@ radius = 100.0
 radius = 6.0
 
 [node name="GolemBoss" type="CharacterBody2D" unique_id=1541148254]
-collision_layer = 2
+collision_layer = 4
 collision_mask = 0
 script = ExtResource("1_jiwok")
 
