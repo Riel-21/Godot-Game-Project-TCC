@@ -9,3 +9,5 @@
 /.godot
 *.cfg
 /.godot/editor
+/Scenes
+Scenes/castle_scene.tscn
