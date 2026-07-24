@@ -204,7 +204,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pk7y5"]
-size = Vector2(80, 193.33333)
+size = Vector2(80, 156.66666)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_86xdo"]
 size = Vector2(193.33333, 161.66666)
@@ -224,7 +224,8 @@ sprite_frames = SubResource("SpriteFrames_86xdo")
 animation = &"run"
 
 [node name="HurtHitbox" type="CollisionShape2D" parent="." unique_id=622273645]
-position = Vector2(-89.999954, -40.00001)
+position = Vector2(-84.999954, -40.000008)
+scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("RectangleShape2D_pk7y5")
 debug_color = Color(3.3691526e-07, 0.64932585, 0.16035587, 0.41960785)
 
