@@ -41,13 +41,12 @@ _data = {
 &"move": SubResource("Animation_cbp6d")
 }
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_myvba"]
+load_path = "res://.godot/imported/walls.png-e3131633827b388dc76b8b13ffd61d0f.ctex"
+
 [node name="Moving_platform" type="Node2D" unique_id=1198943029]
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=491066464]
-
-[node name="ColorRect" type="ColorRect" parent="AnimatableBody2D" unique_id=872896159]
-offset_right = 158.0
-offset_bottom = 40.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1295867810]
 position = Vector2(79.5, 20.5)
@@ -56,3 +55,10 @@ shape = SubResource("RectangleShape2D_js80x")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=888249678]
 libraries/ = SubResource("AnimationLibrary_ms375")
 autoplay = &"move"
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=943796091]
+position = Vector2(83, 21)
+scale = Vector2(1.7142857, 1.3714286)
+texture = SubResource("CompressedTexture2D_myvba")
+region_enabled = true
+region_rect = Rect2(315.6683, 40.258057, 98, 35.746582)

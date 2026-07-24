@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bxpmx1k3jeepd"]
+
+[ext_resource type="Texture2D" uid="uid://d18i44qfj67w1" path="res://Assets/sprites/PNG with Gemini/vecteezy_green-pixel-lantern-design_72636866.png" id="1_veqsg"]
+
+[sub_resource type="Gradient" id="Gradient_wh1uv"]
+offsets = PackedFloat32Array(0, 0.003984034, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.84063745, 0.84063745, 0.84063745, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_js80x"]
+gradient = SubResource("Gradient_wh1uv")
+width = 32
+height = 32
+fill = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_veqsg"]
+light_mode = 1
+
+[sub_resource type="Environment" id="Environment_js80x"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 3.0
+glow_bloom = 0.2
+glow_hdr_threshold = 1.5
+
+[node name="Light" type="PointLight2D" unique_id=1134454714]
+position = Vector2(-209, -219.5)
+scale = Vector2(0.18359375, 0.14257813)
+color = Color(0, 1, 0.5019608, 1)
+energy = 2.0
+texture = SubResource("GradientTexture2D_js80x")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1264857357]
+material = SubResource("CanvasItemMaterial_veqsg")
+position = Vector2(1132.936, 1497.4247)
+scale = Vector2(0.041170176, 0.049246587)
+texture = ExtResource("1_veqsg")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1810966930]
+environment = SubResource("Environment_js80x")

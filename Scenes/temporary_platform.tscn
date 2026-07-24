@@ -1,21 +1,23 @@
 [gd_scene format=3 uid="uid://du0pf7bs53g8s"]
 
 [ext_resource type="Script" uid="uid://dhrq4pet7c1g8" path="res://Scripts/scripts/temporary_platform.gd" id="1_6trwr"]
-[ext_resource type="Texture2D" uid="uid://dykyi2vqrut3j" path="res://icon.svg" id="2_eexsk"]
+[ext_resource type="Texture2D" uid="uid://etg65j2fcges" path="res://Assets/sprites/Pixel2DCastle1.1/walls_far.png" id="2_lqvda"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_js80x"]
 size = Vector2(131, 58.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3lv3l"]
-size = Vector2(134, 58)
+size = Vector2(137, 64)
 
 [node name="TemporaryPlatform" type="StaticBody2D" unique_id=1785285748]
 script = ExtResource("1_6trwr")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1807215527]
-position = Vector2(0, -35.5)
-scale = Vector2(1, 0.4453125)
-texture = ExtResource("2_eexsk")
+position = Vector2(0.5000005, -34)
+scale = Vector2(1.1344538, 1.0943396)
+texture = ExtResource("2_lqvda")
+region_enabled = true
+region_rect = Rect2(20.67141, 66.65842, 119.55945, 53.536156)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1583655137]
 position = Vector2(0.5, -34.375)
@@ -28,7 +30,7 @@ wait_time = 2.0
 position = Vector2(2, 10)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1749745061]
-position = Vector2(-2, -45)
+position = Vector2(-2.5, -45)
 shape = SubResource("RectangleShape2D_3lv3l")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
