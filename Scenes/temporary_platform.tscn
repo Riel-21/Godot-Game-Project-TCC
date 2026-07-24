@@ -4,19 +4,21 @@
 [ext_resource type="Texture2D" uid="uid://dykyi2vqrut3j" path="res://icon.svg" id="2_eexsk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_js80x"]
-size = Vector2(139, 133)
+size = Vector2(131, 58.75)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3lv3l"]
-size = Vector2(142, 137)
+size = Vector2(134, 58)
 
 [node name="TemporaryPlatform" type="StaticBody2D" unique_id=1785285748]
 script = ExtResource("1_6trwr")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1807215527]
+position = Vector2(0, -35.5)
+scale = Vector2(1, 0.4453125)
 texture = ExtResource("2_eexsk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1583655137]
-position = Vector2(-3, 5)
+position = Vector2(0.5, -34.375)
 shape = SubResource("RectangleShape2D_js80x")
 
 [node name="VanishTimer" type="Timer" parent="." unique_id=920946776]
@@ -26,7 +28,7 @@ wait_time = 2.0
 position = Vector2(2, 10)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1749745061]
-position = Vector2(-5, -4.5)
+position = Vector2(-2, -45)
 shape = SubResource("RectangleShape2D_3lv3l")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
