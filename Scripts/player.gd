@@ -14,7 +14,7 @@ extends CharacterBody2D
 
 # --- MOVEMENT CONSTANTS ---
 const SPEED = 300.0
-const JUMP_VELOCITY = -300.0
+const JUMP_VELOCITY = -400.0
 const JUMP_CUTOFF = 0.5 
 
 # Wall Jump Tuning
