@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_js80x"]
 size = Vector2(13, 16)
 
-[node name="minikillzone" type="Area2D" unique_id=776101524]
+[node name="minikillzone_right" type="Area2D" unique_id=776101524]
 script = ExtResource("1_7aeuu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=564786266]

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://jgs7034bvmmh"]
+
+[ext_resource type="Texture2D" uid="uid://12vtxvgqqyjv" path="res://Assets/sprites/PNG with Gemini/16-bit-spike-Sheet.png" id="1_jdjil"]
+[ext_resource type="Script" uid="uid://8sa73vmyonjj" path="res://Scripts/spike_up.gd" id="1_kifd5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jr4ty"]
+size = Vector2(16, 13)
+
+[node name="spike_up" type="Area2D" unique_id=1780889369]
+script = ExtResource("1_kifd5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1312680280]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_jr4ty")
+
+[node name="Timer" type="Timer" parent="." unique_id=1645316327]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1818398816]
+position = Vector2(0, 0.5)
+texture = ExtResource("1_jdjil")
+region_enabled = true
+region_rect = Rect2(0, 2.9368725, 15.949169, 13.0631275)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
