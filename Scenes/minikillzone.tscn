@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://bqsoit6136h5p"]
 
-[ext_resource type="Texture2D" uid="uid://12vtxvgqqyjv" path="res://PNG with Gemini/16-bit-spike-Sheet.png" id="1_0np3j"]
-[ext_resource type="Script" uid="uid://bfkwnbr3k5wyr" path="res://scripts/minikillzone.gd" id="1_7aeuu"]
+[ext_resource type="Texture2D" uid="uid://12vtxvgqqyjv" path="res://Assets/sprites/PNG with Gemini/16-bit-spike-Sheet.png" id="1_0np3j"]
+[ext_resource type="Script" uid="uid://bfkwnbr3k5wyr" path="res://Scripts/scripts/minikillzone.gd" id="1_7aeuu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_js80x"]
-size = Vector2(16, 13)
+size = Vector2(13, 16)
 
 [node name="minikillzone" type="Area2D" unique_id=776101524]
 script = ExtResource("1_7aeuu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=564786266]
-position = Vector2(0, 1.5)
+position = Vector2(-1.5, 0)
 shape = SubResource("RectangleShape2D_js80x")
 
 [node name="Timer" type="Timer" parent="." unique_id=610821018]
@@ -18,6 +18,7 @@ shape = SubResource("RectangleShape2D_js80x")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=252931044]
 texture = ExtResource("1_0np3j")
 hframes = 4
+frame = 1
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

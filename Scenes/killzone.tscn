@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bc536g4khdffx"]
 
-[ext_resource type="Script" uid="uid://tl4qokb4jqcu" path="res://scripts/killzone.gd" id="1_kl8fp"]
-[ext_resource type="Texture2D" uid="uid://12vtxvgqqyjv" path="res://PNG with Gemini/16-bit-spike-Sheet.png" id="2_j2mit"]
+[ext_resource type="Script" uid="uid://tl4qokb4jqcu" path="res://Scripts/scripts/killzone.gd" id="1_kl8fp"]
+[ext_resource type="Texture2D" uid="uid://n854lv3de5sk" path="res://Assets/sprites/PNG with Gemini/NicePng_lava-png_2334439.png" id="2_iyfga"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_js80x"]
 
@@ -9,9 +9,9 @@
 script = ExtResource("1_kl8fp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2134494229]
-position = Vector2(1.0000076, 26)
-scale = Vector2(6.1562505, 4.25)
-texture = ExtResource("2_j2mit")
+position = Vector2(165.99976, 144.99998)
+scale = Vector2(20.816, 2.7625003)
+texture = ExtResource("2_iyfga")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=643010778]
 shape = SubResource("WorldBoundaryShape2D_js80x")
