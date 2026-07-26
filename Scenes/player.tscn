@@ -284,10 +284,10 @@ layout_mode = 2
 zoom = Vector2(2, 2)
 
 [node name="Score_Label" type="Label" parent="Camera2D" unique_id=1332185121]
-offset_left = 1365.0
-offset_top = -780.0
-offset_right = 1780.0
-offset_bottom = -615.0
+offset_left = 1015.0
+offset_top = -790.0
+offset_right = 1430.0
+offset_bottom = -625.0
 theme_override_font_sizes/font_size = 100
 script = ExtResource("8_8erm5")
 
