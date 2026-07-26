@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bc536g4khdffx" path="res://Scenes/killzone.tscn" id="7_ys4pu"]
 [ext_resource type="Texture2D" uid="uid://bt7sqi3hg4ie0" path="res://Assets/sprites/Pixel2DCastle1.1/walls.png" id="8_h2ono"]
 [ext_resource type="PackedScene" uid="uid://bxpmx1k3jeepd" path="res://Scenes/light.tscn" id="9_on4kn"]
+[ext_resource type="PackedScene" uid="uid://cy8oqdg32vx7p" path="res://Scenes/spike_left.tscn" id="10_70gml"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_feyax"]
 texture = ExtResource("1_ka2pi")
@@ -803,6 +804,12 @@ scenes/1/scene = ExtResource("9_on4kn")
 [sub_resource type="TileSet" id="TileSet_quwof"]
 sources/0 = SubResource("TileSetScenesCollectionSource_70gml")
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_8va2t"]
+scenes/1/scene = ExtResource("10_70gml")
+
+[sub_resource type="TileSet" id="TileSet_wtfrb"]
+sources/0 = SubResource("TileSetScenesCollectionSource_8va2t")
+
 [node name="tutorial" type="Node2D" unique_id=577733452]
 script = ExtResource("1_p1f1o")
 
@@ -829,7 +836,8 @@ offset_left = 455.0
 offset_top = -251.0
 offset_right = 787.0
 offset_bottom = -228.0
-text = "Hold the wall with left or right to wall jump"
+text = "Hold the wall with left or right to wall jump
+use double jump to avoid spikes!"
 
 [node name="Evren" parent="." unique_id=1513868683 instance=ExtResource("2_feyax")]
 position = Vector2(62.999992, -14.999994)
@@ -905,4 +913,9 @@ tile_set = SubResource("TileSet_3lv3l")
 tile_map_data = PackedByteArray("AAAHAPz/AAAAAAAAAQAPAPz/AAAAAAAAAQAWAPz/AAAAAAAAAQAhAPj/AAAAAAAAAQAuAOz/AAAAAAAAAQA4AOz/AAAAAAAAAQBYAPD/AAAAAAAAAQBqAPD/AAAAAAAAAQCXAOD/AAAAAAAAAQCcAOD/AAAAAAAAAQChAOD/AAAAAAAAAQCmAOD/AAAAAAAAAQB5APD/AAAAAAAAAQA=")
 tile_set = SubResource("TileSet_quwof")
 
+[node name="TileMapLayer3" type="TileMapLayer" parent="." unique_id=1892505268]
+tile_map_data = PackedByteArray("AAAyAO//AAAAAAAAAQA=")
+tile_set = SubResource("TileSet_wtfrb")
+
 [connection signal="body_entered" from="change_to_main" to="." method="_on_change_to_main_body_entered"]
+[connection signal="body_entered" from="TileMapLayer3/spike_left" to="TileMapLayer3/spike_left" method="_on_body_entered"]

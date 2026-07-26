@@ -14,6 +14,12 @@
 [ext_resource type="PackedScene" uid="uid://d2thqputpagsl" path="res://Scenes/bullet.tscn" id="10_dxa6x"]
 [ext_resource type="Script" uid="uid://cl5i0l1o4pn71" path="res://Scripts/scripts/death.gd" id="11_33i4v"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_js80x"]
+height = 42.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_quwof"]
+size = Vector2(256, 18)
+
 [sub_resource type="Animation" id="Animation_wl8t3"]
 length = 0.001
 tracks/0/type = "value"
@@ -362,23 +368,23 @@ _data = {
 &"ranged_attack": SubResource("Animation_t3nx6")
 }
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_js80x"]
-radius = 13.0
-height = 42.0
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_quwof"]
-radius = 100.0
+radius = 736.6987
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_js80x"]
-size = Vector2(9, 20)
+size = Vector2(6.5, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3lv3l"]
-size = Vector2(10, 20)
+size = Vector2(7, 20)
 
 [node name="GolemBoss" type="CharacterBody2D" unique_id=1541148254]
-collision_layer = 4
+collision_layer = 0
 collision_mask = 4
 script = ExtResource("1_jiwok")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=34793693]
+position = Vector2(0, -2)
+shape = SubResource("CapsuleShape2D_js80x")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=687876824]
 texture = ExtResource("1_tftbb")
@@ -392,6 +398,13 @@ position = Vector2(1, -14)
 position = Vector2(98, 13)
 texture = ExtResource("2_2ivs1")
 vframes = 15
+
+[node name="Laserhitbox" type="Area2D" parent="Pivot" unique_id=1734222033]
+position = Vector2(-1, 14)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pivot/Laserhitbox" unique_id=723353180]
+position = Vector2(121, -17)
+shape = SubResource("RectangleShape2D_quwof")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=310290201]
 libraries/ = SubResource("AnimationLibrary_efjnx")
@@ -412,7 +425,8 @@ offset_top = -27.0
 offset_right = 2.0
 grow_horizontal = 2
 grow_vertical = 0
-value = 100.0
+max_value = 150.0
+value = 150.0
 
 [node name="Label" type="Label" parent="UI/ProgressBar" unique_id=1683034109]
 layout_mode = 0
@@ -435,10 +449,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
 text = "Boss Slained"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=34793693]
-position = Vector2(0, -2)
-shape = SubResource("CapsuleShape2D_js80x")
 
 [node name="PlayerDectection" type="Area2D" parent="." unique_id=1405432994]
 collision_layer = 0
@@ -463,11 +473,11 @@ visible = false
 position = Vector2(-19, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FiniteStateMachine/MeleeAttack/AttackHitbox" unique_id=2038693282]
-position = Vector2(38, 4)
+position = Vector2(36.75, 4)
 shape = SubResource("RectangleShape2D_js80x")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="FiniteStateMachine/MeleeAttack/AttackHitbox" unique_id=1378940371]
-position = Vector2(-1, 5)
+position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_3lv3l")
 
 [node name="LaserBeam" type="Node2D" parent="FiniteStateMachine" unique_id=1407689016]
@@ -479,12 +489,12 @@ script = ExtResource("9_33i4v")
 [node name="Dash" type="Node2D" parent="FiniteStateMachine" unique_id=1165615411]
 script = ExtResource("9_egbyw")
 
-[node name="Death" type="Node2D" parent="FiniteStateMachine" unique_id=300351888]
-script = ExtResource("11_33i4v")
-
 [node name="HomingMissile" type="Node2D" parent="FiniteStateMachine" unique_id=1078147935]
 script = ExtResource("9_isqk6")
 bullet_node = ExtResource("10_dxa6x")
+
+[node name="Death" type="Node2D" parent="FiniteStateMachine" unique_id=300351888]
+script = ExtResource("11_33i4v")
 
 [node name="debug" type="Label" parent="." unique_id=734517389]
 offset_left = -26.0
@@ -495,5 +505,6 @@ text = "debug"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[connection signal="body_entered" from="Pivot/Laserhitbox" to="FiniteStateMachine/LaserBeam" method="_on_laserhitbox_body_entered"]
 [connection signal="body_entered" from="PlayerDectection" to="FiniteStateMachine/idle" method="_on_player_dectection_body_entered"]
 [connection signal="body_entered" from="FiniteStateMachine/MeleeAttack/AttackHitbox" to="FiniteStateMachine/MeleeAttack" method="_on_attack_hitbox_body_entered"]

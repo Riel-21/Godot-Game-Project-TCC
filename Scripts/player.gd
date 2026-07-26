@@ -217,7 +217,7 @@ func attack():
 
 
 func _on_sword_body_entered(body: Node2D) -> void:
-	if body.has_method("take_damage"):
+	if body.has_method("take_damage") and not body.is_in_group("player"):
 		body.take_damage(15)
 
 

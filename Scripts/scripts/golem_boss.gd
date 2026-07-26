@@ -7,7 +7,7 @@ var player: Node2D = null
 var direction : Vector2 = Vector2.ZERO
 var DEF = 0
 
-var health = 100:
+var health = 150:
 	set(value):
 		health = value
 		progress_bar.value = value
@@ -49,3 +49,6 @@ func _physics_process(delta):
 
 func take_damage():
 	health -= 10 - DEF
+	if health <=0:
+		find_child("FiniteStateMachine").change_state("Death")
+		queue_free()

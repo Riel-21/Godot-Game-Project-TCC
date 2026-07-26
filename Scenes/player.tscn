@@ -204,7 +204,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pk7y5"]
-size = Vector2(80, 156.66666)
+size = Vector2(80, 148.33333)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_86xdo"]
 size = Vector2(193.33333, 161.66666)
@@ -212,7 +212,6 @@ size = Vector2(193.33333, 161.66666)
 [node name="Evren" type="CharacterBody2D" unique_id=1513868683 groups=["Player"]]
 position = Vector2(-48.000008, 30.000002)
 scale = Vector2(0.2, 0.2)
-collision_layer = 3
 collision_mask = 21
 script = ExtResource("1_vgqql")
 bullet_node = ExtResource("2_3smsa")
@@ -224,8 +223,8 @@ sprite_frames = SubResource("SpriteFrames_86xdo")
 animation = &"run"
 
 [node name="HurtHitbox" type="CollisionShape2D" parent="." unique_id=622273645]
-position = Vector2(-84.999954, -40.000008)
-scale = Vector2(0.99999994, 0.99999994)
+position = Vector2(-94.999954, -35.00001)
+scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_pk7y5")
 debug_color = Color(3.3691526e-07, 0.64932585, 0.16035587, 0.41960785)
 
