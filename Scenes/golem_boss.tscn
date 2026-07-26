@@ -369,6 +369,12 @@ height = 42.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_quwof"]
 radius = 100.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_js80x"]
+size = Vector2(9, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lv3l"]
+size = Vector2(10, 20)
+
 [node name="GolemBoss" type="CharacterBody2D" unique_id=1541148254]
 collision_layer = 4
 collision_mask = 4
@@ -452,6 +458,18 @@ script = ExtResource("5_jidqh")
 [node name="MeleeAttack" type="Node2D" parent="FiniteStateMachine" unique_id=1365698619]
 script = ExtResource("7_33i4v")
 
+[node name="AttackHitbox" type="Area2D" parent="FiniteStateMachine/MeleeAttack" unique_id=1953673536]
+visible = false
+position = Vector2(-19, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FiniteStateMachine/MeleeAttack/AttackHitbox" unique_id=2038693282]
+position = Vector2(38, 4)
+shape = SubResource("RectangleShape2D_js80x")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="FiniteStateMachine/MeleeAttack/AttackHitbox" unique_id=1378940371]
+position = Vector2(-1, 5)
+shape = SubResource("RectangleShape2D_3lv3l")
+
 [node name="LaserBeam" type="Node2D" parent="FiniteStateMachine" unique_id=1407689016]
 script = ExtResource("8_33i4v")
 
@@ -478,3 +496,4 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="body_entered" from="PlayerDectection" to="FiniteStateMachine/idle" method="_on_player_dectection_body_entered"]
+[connection signal="body_entered" from="FiniteStateMachine/MeleeAttack/AttackHitbox" to="FiniteStateMachine/MeleeAttack" method="_on_attack_hitbox_body_entered"]
