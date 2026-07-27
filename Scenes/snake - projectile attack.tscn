@@ -18,7 +18,7 @@ size = Vector2(298.5, 224.5)
 
 [node name="Snake - Projectile attack" type="CharacterBody2D" unique_id=1375713619 groups=["snake"]]
 collision_layer = 4
-collision_mask = 3
+collision_mask = 11
 script = ExtResource("1_7pca0")
 snake_poision_projectile_scene = ExtResource("2_rku0m")
 

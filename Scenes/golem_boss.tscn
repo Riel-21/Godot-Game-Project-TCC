@@ -378,8 +378,8 @@ size = Vector2(6.5, 20)
 size = Vector2(7, 20)
 
 [node name="GolemBoss" type="CharacterBody2D" unique_id=1541148254]
-collision_layer = 0
-collision_mask = 4
+collision_layer = 4
+collision_mask = 11
 script = ExtResource("1_jiwok")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=34793693]
