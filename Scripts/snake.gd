@@ -24,7 +24,7 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 	move_and_slide()
 
-func take_damage(amount):
+func take_damage(amount: int = 15):
 	health -= amount
 	health = clamp(health, 0, MAX_HEALTH)
 	health_bar.value = health

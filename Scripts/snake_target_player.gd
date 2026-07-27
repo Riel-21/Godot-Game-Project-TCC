@@ -39,7 +39,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
-func take_damage(amount: int) -> void:
+func take_damage(amount: int = 15) -> void:
 	health -= amount
 	health = clamp(health, 0, MAX_HEALTH)
 	if health_bar:

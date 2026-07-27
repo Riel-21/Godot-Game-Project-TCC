@@ -47,7 +47,7 @@ func _physics_process(delta):
 	move_and_collide(velocity * delta)
 
 
-func take_damage():
+func take_damage(amount: int = 10):
 	health -= 10 - DEF
 	if health <=0:
 		find_child("FiniteStateMachine").change_state("Death")

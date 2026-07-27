@@ -8,11 +8,10 @@ func _physics_process(delta):
 	position += direction * speed * delta
 
 
-
 func _on_body_entered(body: Node2D) -> void:
-	body.take_damage()
+	if body.has_method("take_damage"):
+		body.take_damage(damage_amount)
 	queue_free()
-
 
 
 
