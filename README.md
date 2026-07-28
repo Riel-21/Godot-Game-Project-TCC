@@ -34,5 +34,9 @@ Facing and killing enemy snakes on the way up to get points.
 * **Art:**
 	* `[16x16 Health Heart Changes]` by [Redreeh]
 	* `[Pixel art illustration Snake. Pixelated Snake. Snake reptile animal icon pixelated for the pixel art game and icon for website and video game. old]` by [Collaborapix Studio]
+	* `[Boss: Mecha-Stone Golem]` by [Kronovi] 
+	* `[Ultimate Environment Pixel Art Pack]` by [nikllamadev]
 * **Audio:**
 	* `[Lava Loop 3]` by [Fission9 (Freesound)]
+	* `[Dark Fantasy Ambient]` by [DuesLower]
+	* `[Keys of Moon]` by [Thunder Unison]
